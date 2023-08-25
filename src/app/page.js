@@ -11,6 +11,18 @@ export default function Home() {
                 <Hero
                     img="/main-banner-image.jpg"
                 />
+
+                <Hero
+                    img="/main-banner-image.jpg"
+                />
+
+                <Hero
+                    img="/main-banner-image.jpg"
+                />
+
+                <Hero
+                    img="/main-banner-image.jpg"
+                />
             </div>
         </main>
     )
