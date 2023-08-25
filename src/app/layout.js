@@ -37,11 +37,6 @@ export default function RootLayout({ children }) {
     )
 }
 
-export function Br() {
-    return (
-        <br />
-    )
-}
 export function H1({title, className}) {
     return (
         <h1 className={ClashGrotesk.className + className}>{title}</h1>

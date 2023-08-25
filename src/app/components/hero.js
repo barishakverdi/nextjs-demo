@@ -2,7 +2,6 @@ import Image from "next/image"
 import { H1 } from "@/app/layout"
 import { metadata } from "@/app/layout"
 import Button from "@/app/components/button"
-import { Br } from "@/app/layout"
 
 export default function Hero({img}) {
     return (
