@@ -27,7 +27,7 @@ export default function HeaderComponent() {
                         const header = document.getElementsByTagName("header")[0];
                         const headerHeight = header.offsetHeight;
                         const headerOffset = document.createElement("div");
-                        header.insertAdjacentElement("beforebegin", headerOffset);
+                        header.insertAdjacentElement("afterend", headerOffset);
                         
                         window.onscroll = function() {
                             headerOffset.style.paddingTop = parseInt(header.offsetHeight) + "px";
