@@ -14,9 +14,9 @@ export default function HeaderComponent() {
                     </div>
 
                     <div className="right-side">
-                        <div className="menu-bar flex flex-col gap-[16px] cursor-pointer">
-                            <span className="w-[60px] h-[3px] rounded-main bg-black-300"></span>
-                            <span className="w-[60px] h-[3px] rounded-main bg-black-300"></span>
+                        <div className="menu-bar flex flex-col items-center justify-center gap-[16px] cursor-pointer group [&_span]:transition-all [&_span]:duration-700 [&_span]:ease-in-out hover:[&_span]:transition-all hover:[&_span]:duration-700 hover:[&_span]:ease-in-out">
+                            <span className="w-[60px] h-[3px] rounded-main bg-black-300 group-hover:-rotate-180"></span>
+                            <span className="w-[60px] h-[3px] rounded-main bg-black-300 group-hover:-rotate-180"></span>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ export default function HeaderComponent() {
                         header.insertAdjacentElement("afterend", headerOffset);
                         
                         window.onscroll = function() {
-                            headerOffset.style.paddingTop = parseInt(header.offsetHeight) + "px";
+                            headerOffset.style.height = parseInt(header.offsetHeight) + "px";
                             stickyHeader();
                         }
                         
@@ -40,7 +40,7 @@ export default function HeaderComponent() {
                                 header.style.height = "80px";
                             } else {
                                 header.classList.remove("fixed");
-                                headerOffset.style.paddingTop = "0px";
+                                headerOffset.style.height = "0px";
                                 header.style.height = parseInt(headerHeight) + "px";
                             }
                         }

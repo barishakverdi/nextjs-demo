@@ -61,3 +61,13 @@ export function Header({ titleClass, heading, head }) {
         </div>
     )
 }
+
+export function Lines() {
+    return (
+        <div className="lines-wrapper w-full h-screen absolute top-0 left-0 before:content-[''] before:absolute before:top-[100px] before:left-0 before:w-full before:h-[1px] before:bg-black-400/[.15] after:absolute after:bottom-[100px] after:left-0 after:w-full after:h-[1px] after:bg-black-400/[.15] pointer-events-none">
+            <div className="lines-container container h-full mx-auto border-l border-r border-solid border-black-400/[.15]">
+
+            </div>
+        </div>
+    )
+}
