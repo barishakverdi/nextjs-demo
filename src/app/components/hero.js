@@ -6,13 +6,13 @@ import { Lines } from "@/app/layout"
 
 export default function Hero({img}) {
     return (
-        <section className="container mx-auto px-5 flex flex-col gap-[50px] pb-[200px] [&_img]:w-full [&_img]:rounded-xl [&_img]:min-h-[300px] [&_img]:object-cover">
+        <section className="container mx-auto px-5 flex flex-col gap-[50px] pb-[200px] [&_img]:w-full [&_img]:rounded-xl [&_img]:min-h-[300px] [&_img]:object-cover [&_img]:animate-h1">
             <H1
                 title={"Crealive. \n Your creative digital agency."}
-                className=" whitespace-pre-line text-[74px] leading-[78px] text-center"
+                className=" whitespace-pre-line text-[74px] leading-[78px] text-center animate-img"
             />
 
-            <div className="flex items-center gap-[20px] justify-center">
+            <div className="flex items-center gap-[20px] justify-center animate-img">
                 <Button
                     link="/about-us"
                     title="About Us"

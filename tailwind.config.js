@@ -50,7 +50,38 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+
+      animation: {
+        'linear-line': 'linear-line 10s ease-in-out 1s 9999 alternate forwards;',
+        'linear-line-reverse': 'linear-line 10s ease-in-out 1s 9999 alternate-reverse forwards;',
+        'h1': 'h1 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0.8s 1 reverse both;',
+        'img': 'img 1s cubic-bezier(0.5, 1, 0.89, 1) 0.5s 1 normal backwards;',
+      },
+
+      keyframes: {
+        'linear-line': {
+          '0%': { top: '0' },
+          '100%': { top: '100%' },
+        },
+
+        'linear-line-reverse': {
+          '0%': { bottom: '0' },
+          '100%': { bottom: '100%' },
+        },
+
+        'h1': {
+          '0%': { opacity: '1', transform: 'rotateX(0deg)', transformOrigin: 'top', marginTop: '0'},
+          '100%': { opacity: '0', transform: 'rotateX(70deg)', transformOrigin: 'top', marginTop: '20px'},
+        },
+
+        'img': {
+          '0%': { opacity: '0'},
+          '100%': { opacity: '1'},
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@headlessui/tailwindcss'),
+  ],
 }

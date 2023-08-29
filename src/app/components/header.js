@@ -4,7 +4,7 @@ import Script from "next/script"
 
 export default function HeaderComponent() {
     return (
-        <header className="w-full z-30 transition-all duration-300 ease-in-out bg-backgroundColor [&.fixed]:bg-white top-0">
+        <header className="w-full z-30 transition-all duration-300 ease-in-out bg-backgroundColor [&.fixed]:bg-white top-0 animate-img">
             <div className="container mx-auto px-5 h-full">
                 <div className="body py-[32px] flex items-center justify-between h-full">
                     <div className="left-side">

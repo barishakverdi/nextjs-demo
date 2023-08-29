@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <main className="">
             <HeaderComponent />
-            <div className="mt-[50px] mb-[160px] h-[calc(100vh-100px)] flex items-center justify-center">
+            <div className="mt-[50px] mb-[160px] h-[calc(100vh-100px)] flex items-center justify-center animate-img">
                 <Hero
                     img="/main-banner-image.jpg"
                 />

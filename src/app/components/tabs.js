@@ -1,4 +1,9 @@
+'use client'
 import Script from "next/script"
+import { Tab, Transition } from '@headlessui/react'
+import { useState } from 'react'
+import { RevealList } from  'next-reveal'
+
 
 export default function Tabs({ mainTitle }) {
     const tabs = ["About Us", "What we Do?", "Projects"]
@@ -19,67 +24,49 @@ export default function Tabs({ mainTitle }) {
         },
     ]
     return (
-        <section className="mb-[160px]">
-            <div className="container mx-auto px-5">
-                <h2 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 mb-[50px]">{mainTitle}</h2>
-                <div className="flex items-end gap-[24px]">
-                    <div className="w-1/2">
-                        <div
-                            className="tabs flex flex-col gap-[40px] border-l border-solid border-black-400/[.15] pl-[60px]">
-                            {tabs.map((tabItem, a) => (
-                                <span data-tab-id={a}
-                                      className="cursor-pointer text-[40px] leading-[48px] tracking-[-1.8px] text-black-300 opacity-70 relative before:transition-all before:duration-700 before:ease-in-out before:content-[''] before:absolute before:left-0 before:top-[24px] before:w-0 before:h-[2px] before:bg-black-400 before:rounded-full transition-all duration-700 ease-in-out [&.active]:opacity-100 [&.active]:pl-[42px] [&.active]:before:w-[30px] hover:opacity-80 [&.active]:hover:opacity-100"
-                                      key={tabItem}>{tabItem}</span>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="w-1/2 relative">
-                        <div className="tabs-content">
-                            {contents.map((contentItem, a) => (
-                                <div
-                                    className="absolute bottom-0 left-0 content flex-col gap-[24px] opacity-0 h-0 transition-all duration-300 ease-in-out overflow-hidden [&.active]:flex [&.active]:transition-all [&.active]:duration-300 [&.active]:ease-in-out [&.active]:opacity-100 [&.active]:h-max"
-                                    key={contentItem.title} data-content-id={a}>
-                                    {contentItem.title ?
-                                        <h3 className="text-[36px] leading-[42px] tracking-[-1.08px] text-black-400">{contentItem.title}</h3> : ""}
-                                    {contentItem.description ?
-                                        <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">{contentItem.description}</p> : ""}
+        <RevealList interval={100} delay={300} reset={true}>
+            <section className="mb-[160px]">
+                <div className="container mx-auto px-5">
+                    <h2 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 mb-[50px]">{mainTitle}</h2>
+                    <div className="flex items-end gap-[24px]">
+                        <Tab.Group>
+                            <div className="w-1/2">
+                                <div>
+                                    <Tab.List className="flex flex-col gap-[40px] border-l border-solid border-black-400/[.15] pl-[60px]">
+                                        {tabs.map((tabItem, a) => (
+                                            <Tab key={tabItem} className={"ui-selected:opacity-100 ui-selected:pl-[42px] ui-selected:before:w-[30px] ui-selected::hover:opacity-100 text-left outline-0 cursor-pointer text-[40px] leading-[48px] tracking-[-1.8px] text-black-300 opacity-70 relative before:transition-all before:duration-700 before:ease-in-out before:content-[''] before:absolute before:left-0 before:top-[24px] before:w-0 before:h-[2px] before:bg-black-400 before:rounded-full transition-all duration-700 ease-in-out hover:opacity-80"}>{tabItem}</Tab>
+                                        ))}
+                                    </Tab.List>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+
+                            <div className="w-1/2 relative">
+                                <div className="tabs-content">
+                                    <Tab.Panels>
+                                        {contents.map((contentItem, a) => (
+                                            <Tab.Panel key={a.toString()}>
+                                                <Transition
+                                                    appear show={true}
+                                                    enter="transition-opacity duration-700"
+                                                    enterFrom="opacity-0"
+                                                    enterTo="opacity-100 flex flex-col gap-[24px]"
+                                                    leave="transition-opacity duration-700"
+                                                    leaveFrom="opacity-100"
+                                                    leaveTo="opacity-0"
+                                                >
+                                                    {contentItem.title ? <h3 className="text-[36px] leading-[42px] tracking-[-1.08px] text-black-400">{contentItem.title}</h3> : ""}
+                                                    {contentItem.description ? <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">{contentItem.description}</p> : ""}
+                                                </Transition>
+                                            </Tab.Panel>
+                                        ))}
+                                    </Tab.Panels>
+                                </div>
+                            </div>
+                        </Tab.Group>
                     </div>
                 </div>
-            </div>
-
-            <Script id="tab" jsx>
-                {
-                    `
-                        const tabs = document.querySelector(".tabs");
-                        const tab = tabs.querySelectorAll("span");
-                        const tabContent = document.querySelector(".tabs-content");
-                        const content = tabContent.querySelectorAll(".content");
-                        
-                        content.forEach(dataContent => {
-                            const contentID = dataContent.getAttribute("data-content-id");
-                            
-                            tab.forEach(item => {
-                                const tabId = item.getAttribute("data-tab-id");
-                                
-                                item.addEventListener("click", function(e) { 
-                                    if (tabId === contentID) {
-                                        e.currentTarget.classList.add("active");
-                                        dataContent.classList.add("active");
-                                    } else {
-                                        item.classList.remove("active");
-                                        dataContent.classList.remove("active");
-                                    }
-                                })
-                            })
-                        })
-                    `
-                }
-            </Script>
-        </section>
+            </section>
+        </RevealList>
 
     )
 }
