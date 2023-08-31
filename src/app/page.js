@@ -2,6 +2,7 @@ import Image from "next/image"
 import Hero from "@/app/components/hero"
 import HeaderComponent from "@/app/components/header"
 import Tabs from "@/app/components/tabs"
+import LogoSlider from "@/app/components/logoSlider";
 export default function Home() {
     return (
         <main className="">
@@ -27,6 +28,8 @@ export default function Home() {
             <Tabs
                 mainTitle="Who are We?"
             />
+
+            <LogoSlider />
         </main>
     )
 }

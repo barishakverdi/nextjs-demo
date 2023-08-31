@@ -70,8 +70,8 @@ module.exports = {
         },
 
         'h1': {
-          '0%': { opacity: '1', transform: 'rotateX(0deg)', transformOrigin: 'top', marginTop: '0'},
-          '100%': { opacity: '0', transform: 'rotateX(70deg)', transformOrigin: 'top', marginTop: '20px'},
+          '0%': { opacity: '1', transform: 'rotateX(0deg)', transformOrigin: 'top'},
+          '100%': { opacity: '0', transform: 'rotateX(70deg)', transformOrigin: 'top'},
         },
 
         'img': {
