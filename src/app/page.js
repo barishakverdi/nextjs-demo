@@ -1,8 +1,8 @@
 import Image from "next/image"
-import Hero from "@/app/components/hero"
+import Hero from "@/app/components/index/hero"
 import HeaderComponent from "@/app/components/header"
-import Tabs from "@/app/components/tabs"
-import LogoSlider from "@/app/components/logoSlider";
+import Tabs from "@/app/components/index/tabs"
+import LogoSlider from "@/app/components/index/logoSlider";
 export default function Home() {
     return (
         <main className="">
