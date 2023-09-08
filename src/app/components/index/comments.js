@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { RevealList } from  'next-reveal'
 import 'swiper/css';
-import {Autoplay, FreeMode, Scrollbar} from "swiper/modules";
+import {Autoplay, Scrollbar} from "swiper/modules";
 
 export default function Comments({title}) {
     const customers = [
