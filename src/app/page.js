@@ -3,6 +3,7 @@ import Hero from "@/app/components/index/hero"
 import HeaderComponent from "@/app/components/header"
 import Tabs from "@/app/components/index/tabs"
 import LogoSlider from "@/app/components/index/logoSlider";
+import Comments from "@/app/components/index/comments"
 export default function Home() {
     return (
         <main className="">
@@ -30,6 +31,10 @@ export default function Home() {
             />
 
             <LogoSlider />
+
+            <Comments
+
+            />
         </main>
     )
 }

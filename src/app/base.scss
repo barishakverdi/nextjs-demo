@@ -1,6 +1,6 @@
 @import "font-awesome/light";
 body {
-  @apply bg-backgroundColor;
+  @apply bg-backgroundColor overflow-x-hidden;
 }
 
 .container {
