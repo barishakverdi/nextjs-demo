@@ -22,10 +22,10 @@ export default function Comments({title}) {
         },
 
         {
-            title: "John Diamond",
+            title: "John Doe",
             position: "CEO at Crealive",
             comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam?",
-            image: "customer-2.jpeg",
+            image: "customer-1.jpeg",
         },
 
         {
@@ -36,10 +36,10 @@ export default function Comments({title}) {
         },
 
         {
-            title: "John Diamond",
+            title: "John Doe",
             position: "CEO at Crealive",
             comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam?",
-            image: "customer-2.jpeg",
+            image: "customer-1.jpeg",
         },
 
         {
