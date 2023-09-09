@@ -4,6 +4,7 @@ import HeaderComponent from "@/app/components/header"
 import Tabs from "@/app/components/index/tabs"
 import LogoSlider from "@/app/components/index/logoSlider";
 import Comments from "@/app/components/index/comments"
+import Projects from "@/app/components/index/projects"
 export default function Home() {
     return (
         <main className="">
@@ -31,9 +32,12 @@ export default function Home() {
             />
 
             <LogoSlider />
-
             <Comments
+                title={"What did \n" + "Our Customers Say?"}
+            />
 
+            <Projects
+                title="Latest Projects"
             />
         </main>
     )

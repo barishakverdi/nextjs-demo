@@ -58,14 +58,14 @@ export default function Comments({title}) {
                         <Swiper
                             modules={[Autoplay, Scrollbar]}
                             autoplay={{delay: 10000}}
-                            speed={2000}
+                            speed={1000}
                             slidesPerView={1}
                             spaceBetween={34}
                             scrollbar={{enabled: true, draggable: true}}
                             className="[&_.swiper-scrollbar]:h-[2px] [&_.swiper-scrollbar]:rounded-full [&_.swiper-scrollbar]:bg-light-400 [&_.swiper-scrollbar]:mt-[60px] [&_.swiper-scrollbar-drag]:h-[2px] [&_.swiper-scrollbar-drag]:bg-primary [&_.swiper-scrollbar-drag]:rounded-full ![overflow:revert]"
                         >
                             {customers.map((customer)=> (
-                                <SwiperSlide key={customer} className="group ">
+                                <SwiperSlide key={customer + 1} className="group">
                                     <div className="p-[14px_24px] rounded-[48px] border-black-400 border borer-solid w-full opacity-40 transition-all duration-700 ease-in-out group-[&.swiper-slide-active]:opacity-100">
                                         <div className="flex items-center gap-[14px]">
                                             <div className="w-[70px] h-[70px] rounded-full border border-black-300 overflow-hidden [&_img]:w-full [&_img]:h-full [&_img]:object-cover">
