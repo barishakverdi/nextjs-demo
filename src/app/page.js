@@ -5,6 +5,7 @@ import Tabs from "@/app/components/index/tabs"
 import LogoSlider from "@/app/components/index/logoSlider";
 import Comments from "@/app/components/index/comments"
 import Projects from "@/app/components/index/projects"
+import Contact from "@/app/components/index/contact"
 export default function Home() {
     return (
         <main className="">
@@ -39,6 +40,8 @@ export default function Home() {
             <Projects
                 title="Latest Projects"
             />
+
+            <Contact />
         </main>
     )
 }

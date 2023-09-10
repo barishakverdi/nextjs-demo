@@ -38,8 +38,8 @@ export default function Projects({title}) {
                         spaceBetween={24}
                         navigation={{enabled: true}}
                     >
-                        {projects.map((project)=> (
-                            <SwiperSlide key={project + 1}>
+                        {projects.map((project, index)=> (
+                            <SwiperSlide key={index}>
                                 <div className="flex flex-col rounded-main overflow-hidden group">
                                     <div className="">
                                         <a href={project.url} target="_blank" className="flex w-full max-h-[450px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover relative overflow-hidden after:pointer-events-none after:w-full after:h-full after:absolute after:z-20 after:top-0 after:left-0 after:opacity-0 after:bg-gradient-to-b after:from-white/[0] after:to-white/[.4] after:transition-all after:duration-300 after:ease-in-out group-hover:after:opacity-100 ">
