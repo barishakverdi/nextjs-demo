@@ -6,6 +6,7 @@ import LogoSlider from "@/app/components/index/logoSlider";
 import Comments from "@/app/components/index/comments"
 import Projects from "@/app/components/index/projects"
 import Contact from "@/app/components/index/contact"
+import Footer from "@/app/components/footer";
 export default function Home() {
     return (
         <main className="">
@@ -42,6 +43,8 @@ export default function Home() {
             />
 
             <Contact />
+
+            <Footer />
         </main>
     )
 }
