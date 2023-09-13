@@ -28,9 +28,9 @@ export default function Tabs({ mainTitle }) {
             <section className="mb-[160px]">
                 <div className="container mx-auto px-5">
                     <h2 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 mb-[50px]">{mainTitle}</h2>
-                    <div className="flex items-end gap-[24px]">
+                    <div className="flex items-end gap-[24px] lg:flex-col lg:gap-[30px]">
                         <Tab.Group>
-                            <div className="w-1/2">
+                            <div className="w-1/2 lg:w-full">
                                 <div>
                                     <Tab.List className="flex flex-col gap-[40px] border-l border-solid border-black-400/[.15] pl-[60px]">
                                         {tabs.map((tabItem, a) => (
@@ -40,7 +40,7 @@ export default function Tabs({ mainTitle }) {
                                 </div>
                             </div>
 
-                            <div className="w-1/2 relative">
+                            <div className="w-1/2 relative lg:w-full">
                                 <div className="tabs-content">
                                     <Tab.Panels>
                                         {contents.map((contentItem, a) => (
