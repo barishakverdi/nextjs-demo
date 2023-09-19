@@ -6,12 +6,12 @@ import Button from "@/app/components/button"
 export default function Contact({title}) {
     return (
         <RevealList interval={100} delay={500} reset={true} >
-            <section className="my-[160px] py-[50px] border-t border-b border-black-400/[.15]">
+            <section className="my-[160px] xl:my-[80px] lg:my-[50px] py-[50px] lg:py-[30px] border-t border-b border-black-400/[.15]">
                 <div className="container mx-auto px-5">
                     <div className="flex items-center gap-[24px] flex-wrap lg:flex-col">
                         <div className="lg:w-full w-1/2 flex-1">
                             <div className="flex flex-col gap-[30px]">
-                                <h4 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400">{title ? title : 'A Coffee?'}</h4>
+                                <h4 className="text-[60px] leading-[74px] lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px] tracking-[-1.8px] text-black-400">{title ? title : 'A Coffee?'}</h4>
                                 <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">If you have any questions or would like to learn more about collaboration opportunities, please do not hesitate to get in touch with us.</p>
                                 <Button
                                     title="Get Contact"

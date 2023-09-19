@@ -59,14 +59,14 @@ export default function Footer() {
         },
     ]
     return (
-        <RevealList interval={100} delay={500} reset={true} mobile={false}>
+        <RevealList interval={100} delay={300} reset={true} mobile={false}>
             <footer className="mb-[60px]">
                 <div className="container mx-auto px-5">
                     <div className="flex gap-[24px] lg:flex-col">
                         <div className="w-1/2 lg:w-full">
                             <div className="flex flex-col gap-[24px]">
                                 <span className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400">Job Opportunities</span>
-                                <p className="text-[48px] leading-[54px] tracking-[-1.44px] text-black-400">Want to
+                                <p className="text-[48px] leading-[54px] lg:text-[36px] lg:leading-[44px] sm:text-[30px] sm:leading-[38px] tracking-[-1.44px] text-black-400">Want to
                                     improve yourself <br/> with us?</p>
                                 <Button
                                     link="/career"

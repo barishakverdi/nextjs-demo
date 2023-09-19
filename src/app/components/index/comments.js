@@ -51,10 +51,10 @@ export default function Comments({title}) {
     ]
     return (
         <RevealList interval={100} delay={500} reset={true}>
-            <section className="mb-[160px]">
+            <section className="mb-[160px] xl:mb-[80px] lg:mb-[50px]">
                 <div className="container mx-auto px-5">
                     <div className="relative">
-                        <h2 className="whitespace-pre-line text-[60px] leading-[74px] text-black-400 tracking-[-1.8px] mb-[60px]">{title ? title : "What did \n" + "Our Customers Say?"}</h2>
+                        <h2 className="whitespace-pre-line text-[60px] leading-[74px] lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px] text-black-400 tracking-[-1.8px] mb-[60px]">{title ? title : "What did \n" + "Our Customers Say?"}</h2>
                         <Swiper
                             modules={[Autoplay, Scrollbar]}
                             autoplay={{delay: 10000}}
@@ -67,15 +67,15 @@ export default function Comments({title}) {
                             {customers.map((customer, index)=> (
                                 <SwiperSlide key={index} className="group">
                                     <div className="p-[14px_24px] rounded-[48px] border-black-400 border borer-solid w-full opacity-40 transition-all duration-700 ease-in-out group-[&.swiper-slide-active]:opacity-100">
-                                        <div className="flex items-center gap-[14px]">
-                                            <div className="w-[70px] h-[70px] rounded-full border border-black-300 overflow-hidden [&_img]:w-full [&_img]:h-full [&_img]:object-cover">
+                                        <div className="flex items-center gap-[14px] lg:items-start">
+                                            <div className="min-w-[70px] w-[70px] min-h-[70px] h-[70px] rounded-full border border-black-300 overflow-hidden [&_img]:w-full [&_img]:h-full [&_img]:object-cover">
                                                 <Image src={"/"+customer.image} alt="Customer" width={70} height={70} />
                                             </div>
                                             <div className="flex flex-col gap-[8px]">
-                                                <p className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-300">{customer.title}, {customer.position}</p>
+                                                <p className="text-[18px] leading-[18px] lg:text-[16px] lg:leading-[34px tracking-[-0.54px] text-black-300">{customer.title}, {customer.position}</p>
                                                 <div className="flex items-center gap-[8px]">
-                                                    <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 line-clamp-1 max-w-[970px]">{customer.comment}</p>
-                                                    <span className="text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 cursor-pointer flex flex-col after:w-0 after:h-[1px] after:bg-black-400 hover:after:w-full after:transition-all after:duration-300 after:ease-in-out group/read">
+                                                    <p className="text-[18px] leading-[38px] lg:text-[16px] lg:leading-[34px] tracking-[-0.54px] text-gray-400 line-clamp-1 max-w-[970px] lg:line-clamp-none sm:line-clamp-3">{customer.comment}</p>
+                                                    <span className="whitespace-pre text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 cursor-pointer lg:hidden flex flex-col after:w-0 after:h-[1px] after:bg-black-400 hover:after:w-full after:transition-all after:duration-300 after:ease-in-out group/read">
                                                         Read More
                                                         <div className="pointer-events-none absolute left-0 bottom-[-116px] w-full p-[14px] bg-light-200 rounded-xl text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 opacity-0 transition-all duration-300 ease-in-out shadow-[0px_2px_8px_3px_rgba(23,23,23,0.05)] group-hover/read:opacity-100 group-hover/read:pointer-events-auto">
                                                             <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 line-clamp-2">{customer.comment}</p>

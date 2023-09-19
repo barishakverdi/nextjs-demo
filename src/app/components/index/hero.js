@@ -6,7 +6,7 @@ import { Lines } from "@/app/layout"
 
 export default function Hero({img}) {
     return (
-        <section className="container mx-auto px-5 flex flex-col gap-[50px] pb-[200px] lg:px-3">
+        <section className="container mx-auto px-5 flex flex-col gap-[50px] pb-[200px] xl:pb-[100px] lg:pb-[50px] lg:px-3">
             <H1
                 title={"Crealive. \n Your creative digital agency."}
                 className=" whitespace-pre-line text-[74px] leading-[78px] text-center animate-img max-[1366px]:text-[54px] max-[1366px]:leading-[58px] sm:text-[44px] sm:leading-[48px]"

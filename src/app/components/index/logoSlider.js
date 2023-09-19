@@ -10,7 +10,7 @@ export default function LogoSlider({logo}) {
     const slides = [];
     for (let i = 0; i <= slideCount; i++) {
         slides.push(
-            <SwiperSlide key={i} className="transition-all duration-300 ease-in-out opacity-30 hover:opacity-100 hover:transition-all hover:ease-in-out hover:duration-300">
+            <SwiperSlide key={i} className="transition-all duration-300 ease-in-out lg:opacity-100 opacity-30 hover:opacity-100 hover:transition-all hover:ease-in-out hover:duration-300">
                 <div className="flex justify-center p-[16px_24px]">
                     <Image src="logo.svg" alt="Crealive Logo" width={163} height={36} />
                 </div>
@@ -18,12 +18,17 @@ export default function LogoSlider({logo}) {
     }
     return (
         <RevealList interval={100} delay={500} reset={true}>
-            <section className="my-[160px] [&_.swiper-wrapper]:[transition-timing-function:linear]">
+            <section className="my-[160px] xl:my-[80px] lg:my-[50px] [&_.swiper-wrapper]:[transition-timing-function:linear]">
                 <Swiper
                     modules={[Autoplay, FreeMode]}
                     autoplay={{delay: 0}}
                     grabCursor={true}
-                    slidesPerView={6}
+                    slidesPerView={3}
+                    breakpoints={{
+                        992: {
+                            slidesPerView: 6,
+                        },
+                    }}
                     loop={true}
                     freeMode={true}
                     speed={3000}

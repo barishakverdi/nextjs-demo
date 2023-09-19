@@ -27,14 +27,19 @@ export default function Projects({title}) {
     ]
     return (
         <RevealList interval={100} delay={500} reset={true} >
-            <section className="my-[160px]">
+            <section className="my-[160px] xl:my-[80px] lg:my-[50px]">
                 <div className="container mx-auto px-5 [&_.swiper]:[overflow:revert]">
-                    <h2 className="text-[60px] leading-[74px] text-black-400 tracking-[-1.8px] mb-[50px]">{title ? title : "Latest Projects"}</h2>
+                    <h2 className="text-[60px] leading-[74px] lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px] text-black-400 tracking-[-1.8px] mb-[50px]">{title ? title : "Latest Projects"}</h2>
                     <Swiper
                         modules={[Autoplay, Navigation]}
                         autoplay={{delay: 5000}}
                         speed={1000}
-                        slidesPerView={2}
+                        slidesPerView={1}
+                        breakpoints={{
+                            768: {
+                                slidesPerView: 2,
+                            },
+                        }}
                         spaceBetween={24}
                         navigation={{enabled: true}}
                     >
