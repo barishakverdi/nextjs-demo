@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <main className="">
             <HeaderComponent />
-            <div className="mt-[50px] mb-[160px] h-[calc(100vh-100px)] flex items-center justify-center animate-img">
+            <div className="mt-[50px] mb-[160px] xl:mb-[80px] lg:mb-[60px] h-[calc(100vh-100px)] flex items-center justify-center animate-img">
                 <Hero
                     img="/main-banner-image.jpg"
                 />

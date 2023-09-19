@@ -12,7 +12,7 @@ export default function Contact({title}) {
                         <div className="lg:w-full w-1/2 flex-1">
                             <div className="flex flex-col gap-[30px]">
                                 <h4 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400">{title ? title : 'A Coffee?'}</h4>
-                                <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">If you have any questions or would like to learn more about collaboration opportunities, please don't hesitate to get in touch with us.</p>
+                                <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">If you have any questions or would like to learn more about collaboration opportunities, please do not hesitate to get in touch with us.</p>
                                 <Button
                                     title="Get Contact"
                                     link="/"
