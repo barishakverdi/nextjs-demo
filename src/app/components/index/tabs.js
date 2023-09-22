@@ -54,7 +54,7 @@ export default function Tabs({ mainTitle }) {
                                                     leaveFrom="opacity-100"
                                                     leaveTo="opacity-0"
                                                 >
-                                                    {contentItem.title ? <h3 className="text-[36px] leading-[42px] sm:text-[28px] leading-[36px] tracking-[-1.08px] text-black-400">{contentItem.title}</h3> : ""}
+                                                    {contentItem.title ? <h3 className="text-[36px] leading-[42px] sm:text-[28px] sm:leading-[36px] tracking-[-1.08px] text-black-400">{contentItem.title}</h3> : ""}
                                                     {contentItem.description ? <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">{contentItem.description}</p> : ""}
                                                 </Transition>
                                             </Tab.Panel>

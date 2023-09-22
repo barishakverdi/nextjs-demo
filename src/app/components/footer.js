@@ -60,11 +60,11 @@ export default function Footer() {
     ]
     return (
         <RevealList interval={100} delay={300} reset={true} mobile={false}>
-            <footer className="mb-[60px]">
+            <footer className="mb-[60px] md:mb-[45px]">
                 <div className="container mx-auto px-5">
                     <div className="flex gap-[24px] lg:flex-col">
                         <div className="w-1/2 lg:w-full">
-                            <div className="flex flex-col gap-[24px]">
+                            <div className="flex flex-col gap-[24px] lg:gap-[30px]">
                                 <span className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400">Job Opportunities</span>
                                 <p className="text-[48px] leading-[54px] lg:text-[36px] lg:leading-[44px] sm:text-[30px] sm:leading-[38px] tracking-[-1.44px] text-black-400">Want to
                                     improve yourself <br/> with us?</p>
@@ -111,7 +111,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-[60px] mt-[60px] border-t border-black-400/[.15]">
+                <div className="pt-[60px] mt-[60px] md:pt-[45px] md:mt-[45px] border-t border-black-400/[.15]">
                     <div className="container mx-auto px-5">
                         <div className="grid grid-cols-3 md:flex md:flex-col md:items-center md:gap-[20px]">
                             <div>
@@ -119,8 +119,9 @@ export default function Footer() {
                             </div>
 
                             <div className="flex justify-center">
-                                <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">All Rights
-                                    Reserved © Crealive {year.getFullYear()}</p>
+                                <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">
+                                    All Rights Reserved © Crealive {year.getFullYear()}
+                                </p>
                             </div>
 
                             <div className="flex justify-end">

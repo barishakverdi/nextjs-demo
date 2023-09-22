@@ -75,12 +75,12 @@ export default function Comments({title}) {
                                                 <p className="text-[18px] leading-[18px] lg:text-[16px] lg:leading-[34px tracking-[-0.54px] text-black-300">{customer.title}, {customer.position}</p>
                                                 <div className="flex items-center gap-[8px]">
                                                     <p className="text-[18px] leading-[38px] lg:text-[16px] lg:leading-[34px] tracking-[-0.54px] text-gray-400 line-clamp-1 max-w-[970px] lg:line-clamp-none sm:line-clamp-3">{customer.comment}</p>
-                                                    <span className="whitespace-pre text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 cursor-pointer lg:hidden flex flex-col after:w-0 after:h-[1px] after:bg-black-400 hover:after:w-full after:transition-all after:duration-300 after:ease-in-out group/read">
-                                                        Read More
-                                                        <div className="pointer-events-none absolute left-0 bottom-[-116px] w-full p-[14px] bg-light-200 rounded-xl text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 opacity-0 transition-all duration-300 ease-in-out shadow-[0px_2px_8px_3px_rgba(23,23,23,0.05)] group-hover/read:opacity-100 group-hover/read:pointer-events-auto">
+                                                    <div className="group/read">
+                                                        <span className="whitespace-pre text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 cursor-pointer lg:hidden flex flex-col after:w-0 after:h-[1px] after:bg-black-400 hover:after:w-full after:transition-all after:duration-300 after:ease-in-out">Read More</span>
+                                                        <div className="pointer-events-none absolute left-0 bottom-[-116px] w-full p-[14px] bg-light-200 rounded-xl opacity-0 transition-all duration-300 ease-in-out shadow-[0px_2px_8px_3px_rgba(23,23,23,0.05)] group-hover/read:opacity-100 group-hover/read:pointer-events-auto">
                                                             <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 line-clamp-2">{customer.comment}</p>
                                                         </div>
-                                                    </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
