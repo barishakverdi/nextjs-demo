@@ -10,13 +10,23 @@ export default function Ceo() {
             position: "CEO, Founder"
         };
 
-    const numbers = {
-        number1: "15+ \n Years"
-    }
+    const numbers = [
+        {
+            number: "15+ \nyears.",
+        },
+
+        {
+            number: "400+ \nprojects.",
+        },
+
+        {
+            number: "15+\nemployees."
+        }
+    ]
     return (
         <RevealList interval={100} delay={500} reset={true} >
             <section>
-                <div className="[&_img]:w-full [&_img]:max-h-[500px] [&_img]:h-auto [&_img]:object-cover">
+                <div className="[&_img]:w-full [&_img]:max-h-[500px] [&_img]:h-auto [&_img]:object-cover md:[&_img]:h-[300px]">
                     <Image src="/about-us-2.png" alt="About Crealive" width={1440} height={500} />
                 </div>
                 <div className="bg-light-300 pt-[160px] xl:pt-[80px] lg:pt-[50px] pb-[120px] xl:pb-[80px] lg:pb-[50px] border-b border-black-400/[.15]">
@@ -45,10 +55,16 @@ export default function Ceo() {
 
                 <div className="bg-light-300 py-[120px] xl:py-[80px] lg:py-[50px]">
                     <div className="container mx-auto px-5">
-                        <div className="grid grid-cols-3 md:grid-cols-2">
-                            <p>15+ <br/> Years</p>
+                        <div className="grid grid-cols-3 md:grid-cols-2 gap-[40px]">
+                            {numbers.map((item, index) => (
+                                <p key={index} className="whitespace-pre text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px] md:last:col-span-2 md:last:text-center">{item.number}</p>
+                            ))}
                         </div>
                     </div>
+                </div>
+
+                <div className="[&_img]:w-full [&_img]:max-h-[500px] [&_img]:h-auto [&_img]:object-cover mb-[100px] md:mb-[50px] md:[&_img]:h-[300px]">
+                    <Image src="/about-us-3.png" alt="About Crealive" width={1440} height={500} />
                 </div>
             </section>
         </RevealList>
