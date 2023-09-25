@@ -27,12 +27,14 @@ module.exports = {
       white: "#FFFFFF",
       error: "#CE1515",
       backgroundColor: "#F9F9FB",
+      transparent: "transparent",
     },
 
     borderRadius: {
       main: "6px",
       full: "128px",
       xl: "12px",
+      none: "0px",
     },
 
     screens: {

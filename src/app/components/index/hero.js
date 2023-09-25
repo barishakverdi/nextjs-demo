@@ -11,7 +11,7 @@ export default function Hero({img}) {
             <section className="container mx-auto px-5 flex flex-col gap-[50px] pb-[200px] xl:pb-[100px] lg:pb-[50px] lg:px-3 relative items-center">
                 <H1
                     title={"Crealive. \n Your creative digital agency."}
-                    className=" whitespace-pre-line text-[74px] leading-[78px] text-center animate-img max-[1366px]:text-[54px] max-[1366px]:leading-[58px] sm:text-[44px] sm:leading-[48px]"
+                    className=" whitespace-pre-line text-[74px] leading-[78px] tracking-[-2.22px] text-center animate-img max-[1366px]:text-[54px] max-[1366px]:leading-[58px] sm:text-[44px] sm:leading-[48px]"
                 />
 
                 <div className="flex items-center gap-[20px] justify-center animate-img">

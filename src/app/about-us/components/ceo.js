@@ -45,7 +45,7 @@ export default function Ceo() {
                             </div>
                             <div className="w-1/2 lg:w-full flex">
                                 <div className="flex flex-col justify-between gap-[24px] pb-[30px]">
-                                    <p className="text-[48px] leading-[54px] tracking-[-1.44px] text-black-400 xl:text-[38px] xl:leading-[44px] sm:text-[28px] sm:leading-[34px]">Crealive is a digital agency whose brands carry the future with common sense, strategy and new ideas.</p>
+                                    <p className="text-[48px] leading-[54px] tracking-[-1.44px] text-black-300 xl:text-[38px] xl:leading-[44px] sm:text-[28px] sm:leading-[34px]">Crealive is a digital agency whose brands carry the future with common sense, strategy and new ideas.</p>
                                     <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 ">Our 15+ years of experience in the software world have enabled us to approach each project with a high level of expertise,.</p>
                                 </div>
                             </div>

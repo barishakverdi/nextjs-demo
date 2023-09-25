@@ -7,7 +7,7 @@ export default function Customers() {
         {
             title: "Project 1",
             image: "project-1.jpg",
-            url: "https://example.com",
+            url: "/projects/project-detail",
         },
 
         {
@@ -32,7 +32,7 @@ export default function Customers() {
     const logos = [];
     for (let i = 1; i <= 12; i++) {
         logos.push(
-            <div className="flex justify-center p-[16px_24px] lg:p-[16px] transition-all duration-300 ease-in-out lg:opacity-100 opacity-30 hover:opacity-100 hover:transition-all hover:ease-in-out hover:duration-300">
+            <div key={i} className="flex justify-center p-[16px_24px] lg:p-[16px] transition-all duration-300 ease-in-out lg:opacity-100 opacity-30 hover:opacity-100 hover:transition-all hover:ease-in-out hover:duration-300">
                 <Image src="/logo.svg" alt="Crealive Logo" width={163} height={36} />
             </div>
         )

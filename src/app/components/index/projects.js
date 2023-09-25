@@ -42,6 +42,7 @@ export default function Projects({title}) {
                         }}
                         spaceBetween={24}
                         navigation={{enabled: true}}
+                        className="[&_.swiper-wrapper_~_div]:absolute [&_.swiper-button-prev]:right-[54px] [&_.swiper-button-prev]:-top-[100px] [&_.swiper-button-next]:right-0 [&_.swiper-button-next]:-top-[100px] [&_.swiper-wrapper_~_div]:w-[44px] [&_.swiper-wrapper_~_div]:h-[44px] [&_.swiper-wrapper_~_div]:border [&_.swiper-wrapper_~_div]:border-black-300/[.15] [&_.swiper-wrapper_~_div]:rounded-full [&_.swiper-wrapper_~_div]:font-['Font_Awesome_6_Pro']"
                     >
                         {projects.map((project, index)=> (
                             <SwiperSlide key={index}>

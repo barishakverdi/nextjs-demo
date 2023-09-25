@@ -1,14 +1,20 @@
 import "./globals.css"
-import { Inter } from "next/font/google"
+// import { Inter } from "next/font/google"
 import localFont from "next/font/local"
 import base from "./base.scss"
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 const Satoshi = localFont({
     src: [
         {
             path: './fonts/Satoshi-Regular.woff2',
             weight: '400',
+            style: 'normal',
+        },
+
+        {
+            path: './fonts/Satoshi-Medium.woff2',
+            weight: '500',
             style: 'normal',
         },
     ],
