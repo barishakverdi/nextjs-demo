@@ -44,10 +44,10 @@ export default function ContactForm() {
 
                                 <div className="form-group flex flex-col gap-[4px]">
                                     <label htmlFor="subject">
-                                        <select name="subject" id="subject" required className="bg-transparent w-full pb-[15px] border-b text-[16px] border-gray-300 placeholder:text-gray-300 duration-500 ease-in-out focus:border-b-secondary text-black-300 outline-0">
+                                        <select name="subject" id="subject" required defaultValue={options[0]} className="bg-transparent w-full pb-[15px] border-b text-[16px] border-gray-300 placeholder:text-gray-300 duration-500 ease-in-out focus:border-b-secondary text-black-300 outline-0">
                                             {
                                                 options.map((item, index) => (
-                                                    <option value={item} key={index} selected={index === 0}>{item}</option>
+                                                    <option value={item} key={index}>{item}</option>
                                                 ))
                                             }
                                         </select>
