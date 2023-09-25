@@ -1,5 +1,5 @@
+'use client'
 import Image from "next/image"
-import { metadata } from "@/app/layout"
 import Script from "next/script"
 
 export default function HeaderComponent() {
@@ -30,7 +30,7 @@ export default function HeaderComponent() {
                 <div className="body py-[32px] flex items-center justify-between h-full">
                     <div className="left-side lg:[&_img]:w-[150px] lg:[&_img]:h-auto">
                         <a href="/">
-                            <Image src="/logo.svg" alt={metadata.title} width={163} height={36}/>
+                            <Image src="/logo.svg" alt="Crealive Logo" width={163} height={36}/>
                         </a>
                     </div>
 
@@ -54,7 +54,7 @@ export default function HeaderComponent() {
                 <div className="h-full flex flex-col justify-between">
                     <div className="container mx-auto px-5 h-max z-20 relative">
                         <div className="flex items-center justify-between py-[32px] lg:[&_img]:w-[150px] lg:[&_img]:h-auto">
-                            <Image src="/logo.svg" alt={metadata.title} width={163} height={36}/>
+                            <Image src="/logo.svg" alt="Crealive Logo" width={163} height={36}/>
 
                             <div className="menu-bar-close-button flex items-center justify-center bg-white w-[60px] h-[60px] rounded-full cursor-pointer group hover:scale-105 transition-all duration-300 ease-in-out [&_span]:transition-all [&_span]:duration-300 [&_span]:ease-in-out hover:[&_span]:transition-all hover:[&_span]:duration-300 hover:[&_span]:ease-in-out">
                                 <span className="w-[40px] h-[2px] block rounded-main bg-black-300 [transform:translate(15px)_rotate(-45deg)] group-hover:[transform:translate(15px)_rotate(-35deg)]"></span>

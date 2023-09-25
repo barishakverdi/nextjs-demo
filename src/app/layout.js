@@ -20,7 +20,7 @@ const Satoshi = localFont({
     ],
 });
 
-const ClashGrotesk = localFont({
+export const ClashGrotesk = localFont({
     src: [
         {
             path: './fonts/ClashGrotesk-Regular.woff2',

@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { H1 } from "@/app/layout"
-import { metadata } from "@/app/layout"
 import Button from "@/app/components/button"
 import { Lines } from "@/app/layout"
 
@@ -29,7 +28,7 @@ export default function Hero({img}) {
                 </div>
 
                 <div className="px-[100px] xl:px-[75px] lg:px-[50px] sm:px-[12px] w-full rounded-xl overflow-hidden [&_img]:w-full [&_img]:rounded-xl [&_img]:min-h-[300px] max-h-[900px]:[&_img] [&_img]:object-cover [&_img]:animate-h1">
-                    <Image src={img ? img : "/main-banner-image.jpg"} alt={metadata.title} width="1038" height="293" />
+                    <Image src={img ? img : "/main-banner-image.jpg"} alt="Crealive" width="1038" height="293" />
                 </div>
                 <i className="fa-light fa-computer-mouse-scrollwheel lg:!hidden absolute bottom-[34px] text-[32px] fa-bounce"></i>
 
