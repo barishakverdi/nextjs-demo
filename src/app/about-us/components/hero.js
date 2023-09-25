@@ -22,7 +22,7 @@ export default function Hero({mainTitle}) {
                         </div>
                         <div className="w-1/2 lg:w-full">
                             <div className="px-[20px] [&_img]:w-full md:px-0">
-                                <Image src="/about-us.png" alt={"About Crealive "} width={553} height={459} />
+                                <Image src="/about-us.png" alt="About Crealive" width={553} height={459} />
                             </div>
                         </div>
                     </div>
