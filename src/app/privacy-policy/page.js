@@ -44,7 +44,7 @@ export default function Page() {
                         <p>
                             We want to inform you that whenever you visit our Service, we collect information that your
                             browser sends to us that is called Log Data. This Log Data may include information such as
-                            your computer's Internet Protocol (“IP”) address, browser version, pages of our Service that
+                            your computer&lsquo;s Internet Protocol (“IP”) address, browser version, pages of our Service that
                             you visit, the time and date of your visit, the time spent on those pages, and other
                             statistics.
                         </p>
@@ -56,7 +56,7 @@ export default function Page() {
                         <p>
                             Cookies are files with small amount of data that is commonly used an anonymous unique
                             identifier. These are sent to your browser from the website that you visit and are stored on
-                            your computer's hard drive.
+                            your computer&lsquo;s hard drive.
                             <br/>
                             Our website uses these “cookies” to collection information and to improve our Service. You
                             have the option to either accept or refuse these cookies, and know when a cookie is being
@@ -115,7 +115,7 @@ export default function Page() {
                         </p>
 
                         <h2>
-                            Children's Privacy
+                            Children&lsquo;s Privacy
                         </h2>
 
                         <p>
