@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Content({url, link, image, mockup1, mockup2, projectOwner, projectDate, sector, location}) {
     return (
-        <RevealList interval={100} delay={500} reset={true} >
+        <RevealList interval={100} delay={500} reset={false} >
             <section className="mb-[100px] lg:mb-[50px]">
                 <div className="container mx-auto px-[120px] lg:px-[60px] md:px-[30px] sm:px-5">
                     <div className="mb-[64px] lg:mb-[50px]">

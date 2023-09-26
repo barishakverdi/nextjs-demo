@@ -17,7 +17,9 @@ export default function Page() {
             <Ads
                 mainTitle="Job Ads"
             />
-            <Footer/>
+            <Footer
+                revealReset={false}
+            />
         </main>
     )
 }

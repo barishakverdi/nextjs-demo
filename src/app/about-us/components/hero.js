@@ -4,7 +4,7 @@ import { RevealList } from  'next-reveal'
 
 export default function Hero({mainTitle}) {
     return (
-        <RevealList interval={100} delay={500} reset={true} >
+        <RevealList interval={100} delay={500} reset={false} >
             <section className="mt-[80px] pb-[75px] lg:mt-[50px] mb-[160px] xl:mb-[80px] lg:mb-[50px] border-b border-black-400/[.15]">
                 <div className="container mx-auto px-5">
                     <div className="flex items-center gap-[24px] lg:flex-col">

@@ -10,19 +10,19 @@ export default function Projects({title}) {
         {
             title: "Project 1",
             image: "project-1.jpg",
-            url: "https://example.com",
+            url: "/projects/project-detail",
         },
 
         {
             title: "Project 2",
             image: "project-2.jpg",
-            url: "https://example.com",
+            url: "/projects/project-detail",
         },
 
         {
             title: "Project 3",
             image: "project-3.jpg",
-            url: "https://example.com",
+            url: "/projects/project-detail",
         }
     ]
     return (
@@ -48,7 +48,7 @@ export default function Projects({title}) {
                             <SwiperSlide key={index}>
                                 <div className="flex flex-col rounded-main overflow-hidden group">
                                     <div className="">
-                                        <a href={project.url} target="_blank" className="flex w-full max-h-[450px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover relative overflow-hidden after:pointer-events-none after:w-full after:h-full after:absolute after:z-20 after:top-0 after:left-0 after:opacity-0 after:bg-gradient-to-b after:from-white/[0] after:to-white/[.4] after:transition-all after:duration-300 after:ease-in-out group-hover:after:opacity-100 ">
+                                        <a href={project.url} className="flex w-full max-h-[450px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover relative overflow-hidden after:pointer-events-none after:w-full after:h-full after:absolute after:z-20 after:top-0 after:left-0 after:opacity-0 after:bg-gradient-to-b after:from-white/[0] after:to-white/[.4] after:transition-all after:duration-300 after:ease-in-out group-hover:after:opacity-100 ">
                                             <Image src={"/"+project.image} alt={project.title} width={600} height={405} />
                                         </a>
                                     </div>

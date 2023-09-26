@@ -12,7 +12,9 @@ export default function Page() {
             />
             <Customers />
             <BottomBanner />
-            <Footer />
+            <Footer
+                revealReset={false}
+            />
         </main>
     )
 }

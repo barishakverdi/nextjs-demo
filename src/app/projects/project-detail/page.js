@@ -22,7 +22,9 @@ export default function Page() {
                 sector="Jewelery"
                 location="Istanbul / Turkey"
             />
-            <Footer />
+            <Footer
+                revealReset={false}
+            />
         </main>
     )
 }

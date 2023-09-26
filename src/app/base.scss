@@ -16,3 +16,49 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.static-page {
+  h1 {
+    font-family: '__ClashGrotesk_c8ff71', '__ClashGrotesk_Fallback_c8ff71', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    @apply
+    text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px];
+  }
+
+  h2 {
+    @apply
+    text-[60px] leading-[74px] tracking-[-1.8px] text-black-300 lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px];
+  }
+
+  h3 {
+    @apply
+    text-[48px] leading-[54px] tracking-[-1.44px] text-black-300 xl:text-[38px] xl:leading-[44px] sm:text-[28px] sm:leading-[34px];
+  }
+
+  h4 {
+    @apply
+    text-[36px] leading-[42px] tracking-[-1.08px] text-black-300 sm:text-[24px] sm:leading-[32px];
+  }
+
+  p, a {
+    @apply
+    text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400;
+  }
+
+  a {
+    @apply
+    duration-300 ease-in-out hover:text-primary
+  }
+
+  ul {
+    @apply
+    flex flex-col gap-[8px]
+  }
+
+  ul li {
+    @apply
+    flex text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 before:mr-[22px] lg:before:mr-[12px] before:mt-[14px] before:inline-block before:min-w-[10px] before:h-[10px] before:border before:border-secondary before:rounded-full
+  }
+}

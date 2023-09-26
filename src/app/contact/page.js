@@ -9,7 +9,9 @@ export default function Page() {
             <HeaderComponent />
             <Hero />
             <ContactForm />
-            <Footer />
+            <Footer
+                revealReset={false}
+            />
         </main>
     )
 }

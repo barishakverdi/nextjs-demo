@@ -40,7 +40,7 @@ export const ClashGrotesk = localFont({
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-        <body className={Satoshi.className}>{children}</body>
+        <body className={Satoshi.className + " selection:bg-primary/[.1] selection:text-primary"}>{children}</body>
         </html>
     )
 }

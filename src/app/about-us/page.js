@@ -14,7 +14,9 @@ export default function Page() {
                 mainTitle="What we actually do?"
             />
             <Ceo/>
-            <Footer />
+            <Footer
+                revealReset={false}
+            />
         </main>
     )
 }

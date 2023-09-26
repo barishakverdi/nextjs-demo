@@ -11,10 +11,10 @@ export default function Hero({mainTitle}) {
                 </div>
                 <div className="flex items-end justify-center gap-[24px] lg:flex-col relative">
                     <div className="container mx-auto px-5 absolute lg:static">
-                        <div className="w-2/5 lg:w-full">
+                        <div className="w-1/3 lg:w-full">
                             <div className="flex flex-col gap-[12px]">
-                                <a href="tel:+902122814304" className="text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 duration-300 ease-in-out hover:text-secondary">+90 212 281 43 04</a>
-                                <a href="mailto:info@crealive.net" className="text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 duration-300 ease-in-out hover:text-secondary">info@crealive.net</a>
+                                <a href="tel:+902122814304" className="w-max text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 duration-300 ease-in-out hover:text-secondary">+90 212 281 43 04</a>
+                                <a href="mailto:info@crealive.net" className="w-max text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 duration-300 ease-in-out hover:text-secondary">info@crealive.net</a>
                                 <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 duration-300 ease-in-out hover:text-secondary">Esentepe M. Kasap S. Özden Konak Apt. No:4/7, 34394, Şişli, İstanbul</p>
                             </div>
                         </div>

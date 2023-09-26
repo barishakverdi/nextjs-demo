@@ -34,7 +34,7 @@ export default function Tabs({ mainTitle }) {
                                 <div>
                                     <Tab.List className="flex flex-col gap-[40px] border-l border-solid border-black-400/[.15] pl-[60px] lg:pl-[30px] md:pl-[24px] lg:gap-[30px]">
                                         {tabs.map((tabItem, a) => (
-                                            <Tab key={tabItem} className={"ui-selected:opacity-100 ui-selected:pl-[42px] ui-selected:before:w-[30px] ui-selected::hover:opacity-100 text-left outline-0 cursor-pointer text-[40px] leading-[48px] sm:text-[30px] sm:leading-[38px] tracking-[-1.8px] text-black-300 opacity-70 relative before:transition-all before:duration-700 before:ease-in-out before:content-[''] before:absolute before:left-0 before:top-[24px] before:w-0 before:h-[2px] before:bg-black-400 before:rounded-full transition-all duration-700 ease-in-out hover:opacity-80"}>{tabItem}</Tab>
+                                            <Tab key={tabItem} className={"ui-selected:opacity-100 ui-selected:pl-[42px] ui-selected:before:w-[30px] ui-selected::hover:opacity-100 text-left outline-0 cursor-pointer text-[40px] leading-[48px] sm:text-[30px] sm:leading-[38px] tracking-[-1.8px] text-black-300 opacity-70 relative before:transition-all before:duration-700 before:ease-in-out before:content-[''] before:absolute before:left-0 before:top-[24px] before:w-0 before:h-[2px] before:bg-black-400 before:rounded-full transition-all duration-700 ease-in-out hover:opacity-80 focus:outline-0 ui-selected:outline-0"}>{tabItem}</Tab>
                                         ))}
                                     </Tab.List>
                                 </div>

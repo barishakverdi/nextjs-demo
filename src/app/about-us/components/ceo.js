@@ -24,7 +24,7 @@ export default function Ceo() {
         }
     ]
     return (
-        <RevealList interval={100} delay={500} reset={true} >
+        <RevealList interval={100} delay={500} reset={false} >
             <section>
                 <div className="[&_img]:w-full [&_img]:max-h-[500px] [&_img]:h-auto [&_img]:object-cover md:[&_img]:h-[300px]">
                     <Image src="/about-us-2.png" alt="About Crealive" width={1440} height={500} />
@@ -57,7 +57,7 @@ export default function Ceo() {
                     <div className="container mx-auto px-5">
                         <div className="grid grid-cols-3 md:grid-cols-2 gap-[40px]">
                             {numbers.map((item, index) => (
-                                <p key={index} className="whitespace-pre text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px] md:last:col-span-2 md:last:text-center">{item.number}</p>
+                                <p key={index} className="whitespace-pre text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px] md:last:col-span-2 md:text-center">{item.number}</p>
                             ))}
                         </div>
                     </div>

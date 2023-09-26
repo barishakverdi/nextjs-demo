@@ -34,7 +34,9 @@ export default function Page() {
                 offers={offers}
             />
             <CareerForm />
-            <Footer/>
+            <Footer
+                revealReset={false}
+            />
         </main>
     )
 }

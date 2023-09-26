@@ -3,7 +3,7 @@ import {RevealList} from 'next-reveal'
 import Button from "@/app/components/button";
 import Image from "next/image";
 
-export default function Footer() {
+export default function Footer({revealReset}) {
     const year = new Date();
     const menuOne = [
         {
@@ -14,11 +14,6 @@ export default function Footer() {
         {
             title: "Projects",
             link: "/projects"
-        },
-
-        {
-            title: "Customers",
-            link: "/customers"
         },
 
         {
@@ -35,36 +30,36 @@ export default function Footer() {
     const menuTwo = [
         {
             title: "Facebook",
-            link: "/about-us"
+            link: "https://www.facebook.com/crealive"
         },
 
         {
             title: "Instagram",
-            link: "/projects"
+            link: "https://www.instagram.com/crealivenet/"
         },
 
         {
-            title: "Twitter",
-            link: "/customers"
+            title: "X",
+            link: "https://twitter.com/crealivenet"
         },
 
         {
             title: "Linkedin",
-            link: "/career"
+            link: "http://www.linkedin.com/company/crealive"
         },
 
-        {
-            title: "Threads",
-            link: "/contact"
-        },
+        // {
+        //     title: "Pinterest",
+        //     link: "https://tr.pinterest.com/crealive/"
+        // },
     ]
     return (
-        <RevealList interval={100} delay={300} reset={true} mobile={false}>
+        <RevealList interval={100} delay={300} reset={revealReset} mobile={false}>
             <footer className="mb-[60px] md:mb-[45px]">
                 <div className="container mx-auto px-5">
-                    <div className="flex gap-[24px] lg:flex-col">
+                    <div className="flex gap-[24px] lg:flex-col lg:gap-[34px]">
                         <div className="w-1/2 lg:w-full">
-                            <div className="flex flex-col gap-[24px] lg:gap-[30px]">
+                            <div className="flex flex-col gap-[24px] lg:gap-[16px]">
                                 <span className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400">Job Opportunities</span>
                                 <p className="text-[48px] leading-[54px] lg:text-[36px] lg:leading-[44px] sm:text-[30px] sm:leading-[38px] tracking-[-1.44px] text-black-400">Want to
                                     improve yourself <br/> with us?</p>
@@ -99,7 +94,7 @@ export default function Footer() {
                                         {
                                             menuTwo.map((item, index) => (
                                                 <li key={index}>
-                                                    <a href={item.link}
+                                                    <a href={item.link} target="_blank"
                                                        className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 transition-all duration-300 ease-in-out hover:text-black-300">{item.title}</a>
                                                 </li>
                                             ))

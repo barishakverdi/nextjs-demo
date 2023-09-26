@@ -26,7 +26,7 @@ export default function Accordion({mainTitle}) {
     ]
 
     return (
-        <RevealList interval={100} delay={300} reset={true} >
+        <RevealList interval={100} delay={300} reset={false} >
             <section className="mb-[160px] xl:mb-[80px] lg:mb-[50px]">
                 <div className="container mx-auto px-5">
                     <div className="flex gap-[24px] lg:flex-col">
