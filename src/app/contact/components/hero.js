@@ -1,14 +1,13 @@
 'use client'
 import Image from "next/image"
 import { RevealList } from  'next-reveal'
-import { ClashGrotesk } from "@/app/layout"
 
 export default function Hero({mainTitle}) {
     return (
         <RevealList interval={100} delay={500} reset={false} >
             <section className="mt-[100px] lg:mt-[50px] mb-[120px] lg:mb-0">
                 <div className="container mx-auto px-5 mb-[83px] lg:mb-[50px]">
-                    <h1 className={ClashGrotesk.className + " text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px]"}>{mainTitle ? mainTitle : "Contact Us!"}</h1>
+                    <h1 className={"clashGroteskFamily text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px]"}>{mainTitle ? mainTitle : "Contact Us!"}</h1>
                 </div>
                 <div className="flex items-end justify-center gap-[24px] lg:flex-col relative">
                     <div className="container mx-auto px-5 absolute lg:static">

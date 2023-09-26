@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image"
 import { RevealList } from  'next-reveal'
-import { ClashGrotesk } from "@/app/layout"
 
 export default function Hero({mainTitle}) {
     return (
@@ -10,7 +9,7 @@ export default function Hero({mainTitle}) {
                 <div className="container mx-auto px-5">
                     <div className="grid grid-cols-2 gap-[24px] lg:flex lg:flex-col">
                         <div className="w-full">
-                            <h1 className={ClashGrotesk.className+ " text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px] relative w-max after:absolute after:-top-[10px] after:right-[27px] after:w-[110px] after:h-[110px] after:border after:border-black-400/[.1] after:rounded-full lg:after:hidden"}>{mainTitle ? mainTitle : "Unique Projects"}</h1>
+                            <h1 className={"clashGroteskFamily text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px] relative w-max after:absolute after:-top-[10px] after:right-[27px] after:w-[110px] after:h-[110px] after:border after:border-black-400/[.1] after:rounded-full lg:after:hidden"}>{mainTitle ? mainTitle : "Unique Projects"}</h1>
                         </div>
                         <div className="w-full lg:hidden"></div>
                         <div className="w-full lg:hidden"></div>

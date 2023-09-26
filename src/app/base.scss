@@ -10,3 +10,9 @@ body {
 .container {
   @apply max-w-[1240px];
 }
+
+.clashGroteskFamily {
+  font-family: '__ClashGrotesk_c8ff71', '__ClashGrotesk_Fallback_c8ff71', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

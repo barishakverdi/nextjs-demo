@@ -1,6 +1,5 @@
 'use client'
 import { RevealList } from  'next-reveal'
-import { ClashGrotesk } from "@/app/layout"
 
 export default function Hero({mainTitle, description, date, appCount}) {
     return (
@@ -9,7 +8,7 @@ export default function Hero({mainTitle, description, date, appCount}) {
                 <div className="container mx-auto px-5">
                     <div className="flex flex-col gap-[60px] lg:gap-[30px]">
                         <div className="flex flex-col gap-[24px]">
-                            <h1 className={ClashGrotesk.className + " text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px]"}>{mainTitle}</h1>
+                            <h1 className={"clashGroteskFamily text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px]"}>{mainTitle}</h1>
                             <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">{description}</p>
                         </div>
 
