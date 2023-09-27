@@ -9,6 +9,7 @@ export default function CareerForm() {
                 <div className="py-[60px] lg:py-[30px] bg-light-200">
                     <div className="container mx-auto px-5">
                         <div className="px-[260px] xl:px-[130px] lg:px-[60px] md:px-0">
+                            <h3 className="text-[48px] leading-[54px] tracking-[-1.44px] text-black-300 xl:text-[38px] xl:leading-[44px] sm:text-[28px] sm:leading-[34px] mb-[40px] lg:mb-[30px]">Ready to apply?</h3>
                             <form action="" method="post" className="[&_input]:bg-transparent [&_input]:w-full [&_input]:pb-[15px] [&_input]:border-b [&_input]:text-[16px] [&_input]:border-gray-300 [&_input:placeholder]:text-gray-300 [&_input]:duration-500 [&_input]:ease-in-out [&_input:focus]:border-b-secondary [&_input:focus]:text-black-300 [&_input:focus]:outline-0">
                                 <div className="flex flex-col gap-[24px]">
                                     <div className="form-group flex flex-col gap-[4px]">
