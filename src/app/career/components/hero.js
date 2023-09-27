@@ -17,7 +17,7 @@ export default function Hero({mainTitle}) {
                         </div>
                     </div>
                     <div className="w-1/4 lg:w-full flex justify-end lg:justify-start lg:px-5">
-                        <div className="relative [&_img]:w-[5px] [&_img]:h-[156px object-contain]">
+                        <div className="relative [&_img]:w-[5px] [&_img]:h-[156px] object-contain">
                             <Image src="/line.png" alt="line" width={1} height={156} />
                             <p className="bg-backgroundColor [writing-mode:tb-rl] text-[12px] leading-[14px] tracking-[-0.36px] text-black-400 p-[5px_10px_5px_6px] absolute z-10 bottom-[18px] -left-[10px]">Scroll Down</p>
                         </div>
