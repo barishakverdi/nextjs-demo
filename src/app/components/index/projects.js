@@ -31,7 +31,7 @@ export default function Projects({title}) {
                                 <div className="flex flex-col rounded-main overflow-hidden group">
                                     <div className="">
                                         <a href={project.url} className="flex w-full max-h-[450px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover relative overflow-hidden after:pointer-events-none after:w-full after:h-full after:absolute after:z-20 after:top-0 after:left-0 after:opacity-0 after:bg-gradient-to-b after:from-white/[0] after:to-white/[.4] after:transition-all after:duration-300 after:ease-in-out group-hover:after:opacity-100 ">
-                                            <Image src={"/"+project.image} alt={project.title} width={600} height={405} />
+                                            <Image src={project.image} alt={project.title} width={600} height={405} />
                                         </a>
                                     </div>
                                     <div className="p-[16px_22px]">
