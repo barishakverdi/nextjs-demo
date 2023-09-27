@@ -17,7 +17,7 @@ export default function Hero({mainTitle}) {
                             <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 mt-[60px] lg:mt-0">Our 15+ years of experience in the software world have enabled us to approach each project with a high level of expertise, delivering the best solutions to meet customer needs. The experience we have gained on each project has strengthened our mastery of technology and industry trends.</p>
                         </div>
                         <div className="w-full col-span-2">
-                            <div className="relative [&_img]:w-[5px] [&_img]:h-[156px]">
+                            <div className="relative [&_img]:w-[5px] [&_img]:h-[156px] object-contain">
                                 <Image src="/line.png" alt="line" width={1} height={156} />
                                 <p className="bg-backgroundColor [writing-mode:tb-rl] text-[12px] leading-[14px] tracking-[-0.36px] text-black-400 p-[5px_10px_5px_6px] absolute z-10 bottom-[18px] -left-[10px]">Scroll Down</p>
                             </div>

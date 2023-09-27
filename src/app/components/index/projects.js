@@ -4,27 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { RevealList } from  'next-reveal'
 import 'swiper/css';
 import {Autoplay, Navigation} from "swiper/modules";
+import {projects} from "@/app/projects/components/customerList";
 
 export default function Projects({title}) {
-    const projects = [
-        {
-            title: "Project 1",
-            image: "project-1.jpg",
-            url: "/projects/project-detail",
-        },
-
-        {
-            title: "Project 2",
-            image: "project-2.jpg",
-            url: "/projects/project-detail",
-        },
-
-        {
-            title: "Project 3",
-            image: "project-3.jpg",
-            url: "/projects/project-detail",
-        }
-    ]
     return (
         <RevealList interval={100} delay={500} reset={true} >
             <section className="my-[160px] xl:my-[80px] lg:my-[50px]">
