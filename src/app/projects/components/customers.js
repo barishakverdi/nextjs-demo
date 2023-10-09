@@ -5,7 +5,7 @@ import { projects } from "@/app/projects/components/customerList";
 
 export default function Customers() {
     const logos = [];
-    for (let i = 1; i <= 60; i++) {
+    for (let i = 1; i <= 27; i++) {
         logos.push(
             <div key={i} className="flex justify-center items-center min-h-[100px] p-[24px_50px] lg:p-[16px] transition-all duration-300 ease-in-out lg:grayscale-0 grayscale hover:grayscale-0 hover:transition-all hover:ease-in-out hover:duration-300">
                 <a href="https://example.com" className="block w-full h-max [&_img]:w-full [&_img]:h-auto [&_img]:aspect-video [&_img]:object-contain" target="_blank">

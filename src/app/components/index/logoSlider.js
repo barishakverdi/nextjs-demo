@@ -6,7 +6,7 @@ import 'swiper/css';
 import {Autoplay, FreeMode} from "swiper/modules";
 
 export default function LogoSlider({logo}) {
-    const logoCount = 30;
+    const logoCount = 27;
     const logos = [];
     for (let i = 1; i <= logoCount; i++) {
         logos.push(
