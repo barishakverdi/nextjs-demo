@@ -31,21 +31,21 @@ export default function Accordion({mainTitle}) {
                 <div className="container mx-auto px-5">
                     <div className="flex gap-[24px] lg:flex-col">
                         <div className="w-1/2 lg:w-full">
-                            <h2 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px]">{mainTitle ? mainTitle : "What we actually do?"}</h2>
+                            <h2 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 dark:text-white lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px]">{mainTitle ? mainTitle : "What we actually do?"}</h2>
                         </div>
                         <div className="w-1/2 lg:w-full">
                             <div className="flex flex-col gap-[60px] lg:gap-[36px] px-[70px] xl:px-[60px] lg:px-[30] md:px-0">
                                 {
                                     accordionContent.map((item, index) => (
-                                        <div className="flex flex-col gap-[24px] pb-[20px] border-b border-black-400/[.1] last:border-none" key={index}>
+                                        <div className="flex flex-col gap-[24px] pb-[20px] border-b border-black-400/[.1] dark:border-white/[.1] last:border-none" key={index}>
                                             <Disclosure defaultOpen={index === 0}>
                                                 {({open}) => (
                                                     <>
                                                     <Disclosure.Button className={"flex items-center justify-between gap-[8px] "}>
-                                                        <h3 className="text-[36px] leading-[42px] tracking-[-1.08px] text-black-400 sm:text-[24px] sm:leading-[32px]">{item.title}</h3>
+                                                        <h3 className="text-[36px] leading-[42px] tracking-[-1.08px] text-black-400 dark:text-white sm:text-[24px] sm:leading-[32px]">{item.title}</h3>
                                                         <div className="flex items-center justify-center transition-all duration-300 ease-in-out [&_span]:transition-all [&_span]:duration-500 [&_span]:ease-in-out">
-                                                            <span className="block w-[44px] sm:w-[32px] h-[3px] sm:h-[2px] bg-black-300 rounded-full ui-open:rotate-180"></span>
-                                                            <span className="absolute block w-[44px] sm:w-[32px] h-[3px] sm:h-[2px] bg-black-300 rotate-90 rounded-full ui-open:rotate-180"></span>
+                                                            <span className="block w-[44px] sm:w-[32px] h-[3px] sm:h-[2px] bg-black-300 dark:bg-light-300 rounded-full ui-open:rotate-180"></span>
+                                                            <span className="absolute block w-[44px] sm:w-[32px] h-[3px] sm:h-[2px] bg-black-300 dark:bg-light-300 rotate-90 rounded-full ui-open:rotate-180"></span>
                                                         </div>
                                                     </Disclosure.Button>
                                                     <Transition
@@ -58,7 +58,7 @@ export default function Accordion({mainTitle}) {
                                                         leaveTo="transform opacity-0"
                                                     >
                                                         <Disclosure.Panel static>
-                                                            <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">
+                                                            <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400">
                                                                 {item.content}
                                                             </p>
                                                         </Disclosure.Panel>

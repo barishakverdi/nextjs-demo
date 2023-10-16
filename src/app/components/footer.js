@@ -60,13 +60,13 @@ export default function Footer({revealReset}) {
                     <div className="flex gap-[24px] lg:flex-col lg:gap-[34px]">
                         <div className="w-1/2 lg:w-full">
                             <div className="flex flex-col gap-[24px] lg:gap-[16px]">
-                                <span className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400">Job Opportunities</span>
-                                <p className="text-[48px] leading-[54px] lg:text-[36px] lg:leading-[44px] sm:text-[30px] sm:leading-[38px] tracking-[-1.44px] text-black-400">Want to
+                                <span className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400 dark:text-white">Job Opportunities</span>
+                                <p className="text-[48px] leading-[54px] lg:text-[36px] lg:leading-[44px] sm:text-[30px] sm:leading-[38px] tracking-[-1.44px] text-black-400 dark:text-white">Want to
                                     improve yourself <br/> with us?</p>
                                 <Button
                                     link="/career"
                                     title="Career"
-                                    type="border-black-300 text-black-300 hover:border-secondary hover:text-secondary w-max"
+                                    type="border-black-300 text-black-300 hover:border-secondary hover:text-secondary w-max dark:border-white dark:text-white hover:dark:bg-white hover:dark:text-black-400"
                                 />
                             </div>
                         </div>
@@ -75,13 +75,13 @@ export default function Footer({revealReset}) {
                             <div className="flex gap-[16px] w-full">
                                 <div className="flex flex-col gap-[20px] w-full">
                                     <span
-                                        className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400">Crealive</span>
+                                        className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400 dark:text-white">Crealive</span>
                                     <ul className="flex flex-col gap-[8px]">
                                         {
                                             menuOne.map((item, index) => (
                                                 <li key={index}>
                                                     <a href={item.link}
-                                                       className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 transition-all duration-300 ease-in-out hover:text-black-300">{item.title}</a>
+                                                       className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 duration-300 ease-in-out hover:text-black-300 relative after:duration-300 after:ease-in-out after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black-300 after:dark:bg-light-400 hover:after:w-full">{item.title}</a>
                                                 </li>
                                             ))
                                         }
@@ -89,13 +89,13 @@ export default function Footer({revealReset}) {
                                 </div>
 
                                 <div className="flex flex-col gap-[20px] w-full">
-                                    <span className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400">Follow Us</span>
+                                    <span className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400 dark:text-white">Follow Us</span>
                                     <ul className="flex flex-col gap-[8px]">
                                         {
                                             menuTwo.map((item, index) => (
                                                 <li key={index}>
                                                     <a href={item.link} target="_blank"
-                                                       className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 transition-all duration-300 ease-in-out hover:text-black-300">{item.title}</a>
+                                                       className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300 relative after:duration-300 after:ease-in-out after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black-300 after:dark:bg-light-400 hover:after:w-full">{item.title}</a>
                                                 </li>
                                             ))
                                         }
@@ -109,12 +109,12 @@ export default function Footer({revealReset}) {
                 <div className="pt-[60px] mt-[60px] md:pt-[45px] md:mt-[45px] border-t border-black-400/[.15]">
                     <div className="container mx-auto px-5">
                         <div className="grid grid-cols-3 md:flex md:flex-col md:items-center md:gap-[20px]">
-                            <div>
+                            <div className="crealive-logo">
                                 <Image src="/logo.svg" alt="Crealive" width={163} height={36}/>
                             </div>
 
                             <div className="flex justify-center">
-                                <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400">
+                                <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400">
                                     All Rights Reserved © Crealive {year.getFullYear()}
                                 </p>
                             </div>
@@ -123,12 +123,12 @@ export default function Footer({revealReset}) {
                                 <ul className="flex items-center gap-[25px]">
                                     <li className="relative after:w-[1px] after:h-[20px] after:bg-black-300/[.1] after:absolute after:-right-[13px] after:top-[8px]">
                                         <a href="/gdpr"
-                                           className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 transition-all duration-300 ease-in-out hover:text-black-300">GDPR</a>
+                                           className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300">GDPR</a>
                                     </li>
 
                                     <li>
                                         <a href="/privacy-policy"
-                                           className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 transition-all duration-300 ease-in-out hover:text-black-300">Privacy
+                                           className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300">Privacy
                                             Policy</a>
                                     </li>
                                 </ul>

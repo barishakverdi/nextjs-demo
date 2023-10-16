@@ -2,6 +2,7 @@ import "./globals.css"
 // import { Inter } from "next/font/google"
 import localFont from "next/font/local"
 import base from "./base.scss"
+import Script from "next/script";
 
 // const inter = Inter({ subsets: ["latin"] });
 const Satoshi = localFont({
@@ -48,6 +49,27 @@ export default function RootLayout({ children }) {
                 <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#88b94e" />
                 <meta name="msapplication-TileColor" content="#88b94e" />
                 <meta name="theme-color" content="#ffffff" />
+                <Script id="darkmode" jsx>
+                    {
+                        `
+                            // On page load or when changing themes, best to add inline in \`head\` to avoid FOUC
+                            if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+                              document.documentElement.classList.add('dark')
+                            } else {
+                              document.documentElement.classList.remove('dark')
+                            }
+                            
+                            // Whenever the user explicitly chooses light mode
+                            localStorage.theme = 'light'
+                            
+                            // Whenever the user explicitly chooses dark mode
+                            localStorage.theme = 'dark'
+                            
+                            // Whenever the user explicitly chooses to respect the OS preference
+                            localStorage.removeItem('theme')
+                        `
+                    }
+                </Script>
             </head>
             <body className={Satoshi.className + " selection:bg-primary/[.2] selection:text-primary"}>{children}</body>
         </html>
@@ -62,10 +84,10 @@ export function H1({title, className}) {
 
 export function Lines() {
     return (
-        <div className="lines-wrapper w-full h-screen absolute top-0 left-0 before:content-[''] before:absolute before:top-[100px] before:left-0 before:w-full before:h-[1px] before:bg-black-400/[.15] lg:after:hidden after:absolute after:bottom-[100px] after:left-0 after:w-full after:h-[1px] after:bg-black-400/[.15] pointer-events-none">
-            <div className="lines-container container h-full mx-auto border-l border-r border-solid border-black-400/[.15] relative xl:hidden">
-                <div className="absolute left-[-1px] w-[1px] h-[76px] bg-black-400 animate-linear-line"></div>
-                <div className="absolute right-[-1px] w-[1px] h-[76px] bg-black-400 animate-linear-line-reverse"></div>
+        <div className="lines-wrapper w-full h-screen absolute top-0 left-0 before:content-[''] before:absolute before:top-[100px] before:left-0 before:w-full before:h-[1px] before:bg-black-400/[.15] dark:before:bg-white/[.15] lg:after:hidden after:absolute after:bottom-[100px] after:left-0 after:w-full after:h-[1px] after:bg-black-400/[.15] dark:after:bg-white/[.15] pointer-events-none">
+            <div className="lines-container container h-full mx-auto border-l border-r border-solid border-black-400/[.15] dark:border-white/[.15] relative xl:hidden">
+                <div className="absolute left-[-1px] w-[1px] h-[76px] bg-black-400 dark:bg-white animate-linear-line"></div>
+                <div className="absolute right-[-1px] w-[1px] h-[76px] bg-black-400 dark:bg-white animate-linear-line-reverse"></div>
             </div>
         </div>
     )

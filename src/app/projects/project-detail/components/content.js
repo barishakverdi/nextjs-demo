@@ -2,7 +2,7 @@
 import { RevealList } from  'next-reveal'
 import Image from "next/image";
 
-export default function Content({url, link, image, mockup1, mockup2, projectOwner, projectDate, sector, location}) {
+export default function Content({url, link, image, mockup1, mockup1Dark, mockup2, mockup2Dark, projectOwner, projectDate, sector, location}) {
     return (
         <RevealList interval={100} delay={500} reset={false} >
             <section className="mb-[100px] lg:mb-[50px]">
@@ -16,8 +16,8 @@ export default function Content({url, link, image, mockup1, mockup2, projectOwne
                             </div>
                             <div className="p-[16px_22px]">
                                 <a href={url} className="flex items-center justify-between gap-[12px]">
-                                    <h2 className="text-[36px] leading-[42px] tracking-[-1.08px] text-black-300 md:text-[26px] md:leading-[32px] after:w-0 after:h-[1px] after:bg-black-300 flex flex-col group-hover:after:w-full after:transition-all after:duration-300 after:ease-in-out">{link}</h2>
-                                    <i className="fa-light fa-arrow-right text-[32px] text-black-300"></i>
+                                    <h2 className="text-[36px] leading-[42px] tracking-[-1.08px] text-black-300 dark:text-light-200 md:text-[26px] md:leading-[32px] after:w-0 after:h-[1px] after:bg-black-300 flex flex-col group-hover:after:w-full after:transition-all after:duration-300 after:ease-in-out">{link}</h2>
+                                    <i className="fa-light fa-arrow-right text-[32px] text-black-300 dark:text-light-200"></i>
                                 </a>
                             </div>
                         </div>
@@ -26,27 +26,37 @@ export default function Content({url, link, image, mockup1, mockup2, projectOwne
                     <div className="mb-[24px]">
                         <div className="flex items-center gap-[24px] lg:flex-col">
                             <div className="w-1/2 lg:w-full">
-                                <div className="grid grid-cols-2 gap-[15px_8px] [&_p]:text-[18px] [&_p]:leading-[38px] [&_p]:tracking-[-0.54px] [&_p]:text-gray-400">
+                                <div className="grid grid-cols-2 gap-[15px_8px] [&_p]:text-[18px] [&_p]:leading-[38px] [&_p]:tracking-[-0.54px] [&_p]:text-gray-400 [&_p]:dark:text-light-400">
                                     <p>Project Owner</p>
-                                    <p className="!text-black-300">{projectOwner}</p>
+                                    <p className="!text-black-300 dark:!text-white">{projectOwner}</p>
                                     <p>Project Date</p>
-                                    <p className="!text-black-300">{projectDate}</p>
+                                    <p className="!text-black-300 dark:!text-white">{projectDate}</p>
                                     <p>Sector</p>
-                                    <p className="!text-black-300">{sector}</p>
+                                    <p className="!text-black-300 dark:!text-white">{sector}</p>
                                     <p>Location</p>
-                                    <p className="!text-black-300">{location}</p>
+                                    <p className="!text-black-300 dark:!text-white">{location}</p>
                                 </div>
                             </div>
                             <div className="w-1/2 lg:w-full">
                                 <div className="[&_img]:w-full [&_img]:h-auto rounded-xl overflow-hidden">
-                                    <Image src={"/"+mockup1} alt={projectOwner} width={487} height={364}/>
+                                    <div className="dark:hidden">
+                                        <Image src={"/"+mockup1} alt={projectOwner} width={487} height={364}/>
+                                    </div>
+                                    <div className="hidden dark:block">
+                                        <Image src={"/"+mockup1Dark} alt={projectOwner} width={487} height={364}/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="mb-[100px] lg:mb-[50px] rounded-xl overflow-hidden">
-                        <Image src={"/"+mockup2} alt={projectOwner} width={1000} height={480}/>
+                        <div className="dark:hidden">
+                            <Image src={"/"+mockup2} alt={projectOwner} width={1000} height={480}/>
+                        </div>
+                        <div className="hidden dark:block">
+                            <Image src={"/"+mockup2Dark} alt={projectOwner} width={1000} height={480}/>
+                        </div>
                     </div>
                 </div>
             </section>

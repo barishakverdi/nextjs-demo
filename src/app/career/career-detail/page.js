@@ -27,7 +27,7 @@ export default function Page() {
                 mainTitle="Front-End Developer"
                 description="We have an experienced and passionate team. The new member in the Front-End Developer position will join our experienced team, contributing to our projects and becoming a part of our agency's success story."
                 date="Jun 23, 2023"
-                appCount={24}
+                // appCount={24}
             />
             <Content
                 expectations={expectations}

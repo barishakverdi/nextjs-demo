@@ -27,6 +27,7 @@ module.exports = {
       white: "#FFFFFF",
       error: "#CE1515",
       backgroundColor: "#F9F9FB",
+      darkBackgroundColor: "#131314",
       transparent: "transparent",
     },
 
@@ -83,6 +84,7 @@ module.exports = {
       },
     },
   },
+  darkMode: 'class',
   plugins: [
     require('@headlessui/tailwindcss'),
   ],
