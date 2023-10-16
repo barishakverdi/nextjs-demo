@@ -4,7 +4,7 @@ import { RevealList } from  'next-reveal'
 export default function Content({mainTitle, subTitle, description}) {
     return (
         <RevealList interval={100} delay={500} reset={false} >
-            <section className="pb-[160px] xl:pb-[80px] lg:pb-[50px] lg:border-b lg:border-black-400/[.15] lg:mb-[50px]">
+            <section className="pb-[160px] xl:pb-[80px] lg:pb-[50px] lg:border-b lg:border-black-400/[.15] lg:dark:border-white/[.15] lg:mb-[50px]">
                 <div className="container mx-auto px-5">
                     <div className="flex flex-col gap-[100px] lg:gap-[50px] md:gap-[24px]">
                         <h2 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 dark:text-white lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px]">{mainTitle ? mainTitle : "What we Offer?"}</h2>
