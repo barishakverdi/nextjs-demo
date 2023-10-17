@@ -1,14 +1,14 @@
 'use client'
 import Image from "next/image"
 import { RevealList } from  'next-reveal'
-import { projects } from "@/app/projects/components/customerList";
+import { projects, domains } from "@/app/projects/components/customerList";
 
 export default function Customers() {
     const logos = [];
     for (let i = 1; i <= 27; i++) {
         logos.push(
-            <div key={i} className="flex justify-center items-center min-h-[100px] p-[24px_50px] lg:p-[16px] transition-all duration-300 ease-in-out lg:grayscale-0 grayscale hover:grayscale-0 hover:transition-all hover:ease-in-out hover:duration-300">
-                <a href="https://example.com" className="block w-full h-max [&_img]:w-full [&_img]:h-auto [&_img]:aspect-video [&_img]:object-contain" target="_blank">
+            <div key={i} className="flex justify-center items-center min-h-[100px] p-[24px_50px] lg:p-[16px] transition-all duration-300 ease-in-out lg:grayscale-0 grayscale hover:dark:grayscale hover:grayscale-0 hover:transition-all hover:ease-in-out hover:duration-300 [&:nth-child(4)_img]:dark:invert [&:nth-child(13)_img]:dark:invert [&:nth-child(15)_img]:dark:invert">
+                <a href={domains[i - 1]} className="block w-full h-max [&_img]:w-full [&_img]:h-auto [&_img]:aspect-video [&_img]:object-contain [&_img]:dark:brightness-[3]" target="_blank">
                     <Image src={"/clients/client-" + i + ".png"} alt={"client-" + i} width={163} height={36} loading={"lazy"} />
                 </a>
             </div>

@@ -10,7 +10,7 @@ export default function Hero({mainTitle}) {
                     <div className="flex items-center gap-[24px] lg:flex-col">
                         <div className="w-1/2 lg:w-full">
                             <div className="flex flex-col gap-[60px] lg:gap-[24px]">
-                                <h1 className={"clashGroteskFamily text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 dark:text-white xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px] relative w-max after:absolute after:-top-[10px] after:-right-[10px] after:w-[110px] after:h-[110px] after:border after:border-black-400/[.1] after:rounded-full lg:after:hidden"}>
+                                <h1 className={"clashGroteskFamily text-[74px] leading-[78px] tracking-[-2.22px] text-black-400 dark:text-white xl:text-[54px] xl:leading-[58px] sm:text-[44px] sm:leading-[48px] relative w-max after:absolute after:-top-[10px] after:-right-[10px] after:w-[110px] after:h-[110px] after:border after:border-black-400/[.1] after:dark:border-white/[.1] after:rounded-full lg:after:hidden"}>
                                     {mainTitle ? mainTitle : "About Crealive"}
                                 </h1>
                                 <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400">We are a leading software agency with over 15 years of experience in the software

@@ -68,7 +68,7 @@ export default function Comments({title}) {
                                 <SwiperSlide key={index} className="group">
                                     <div className="p-[14px_24px] rounded-[48px] border-black-400 dark:border-white border borer-solid w-full opacity-40 transition-all duration-700 ease-in-out group-[&.swiper-slide-active]:opacity-100">
                                         <div className="flex items-center gap-[14px] lg:items-start">
-                                            <div className="min-w-[70px] w-[70px] min-h-[70px] h-[70px] rounded-full border border-black-300 overflow-hidden [&_img]:w-full [&_img]:h-full [&_img]:object-cover">
+                                            <div className="min-w-[70px] w-[70px] min-h-[70px] h-[70px] rounded-full border border-black-300 dark:border-light-300 overflow-hidden [&_img]:w-full [&_img]:h-full [&_img]:object-cover">
                                                 <Image src={"/"+customer.image} alt="Customer" width={70} height={70} />
                                             </div>
                                             <div className="flex flex-col gap-[8px]">
