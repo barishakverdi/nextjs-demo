@@ -49,29 +49,59 @@ export default function RootLayout({ children }) {
                 <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#88b94e" />
                 <meta name="msapplication-TileColor" content="#88b94e" />
                 <meta name="theme-color" content="#ffffff" />
+            </head>
+            <body className={Satoshi.className + " selection:bg-primary/[.2] selection:text-primary"}>
+                {children}
                 <Script id="darkmode" jsx>
                     {
-                        `
-                            // On page load or when changing themes, best to add inline in \`head\` to avoid FOUC
-                            if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
-                              document.documentElement.classList.add('dark')
-                            } else {
-                              document.documentElement.classList.remove('dark')
+                        `   
+                            const themeSwitcher = document.querySelector(".theme-switcher")
+                            const currentTheme = localStorage.getItem("theme");
+                        
+                            if (currentTheme === "dark") {
+                                html.classList.add("dark");
+                                
+                                crealiveLogo.forEach(logo => {
+                                    if (logo.getAttribute("src") === "/logo.svg") {
+                                        logo.setAttribute("src", "/logo-white.svg")
+                                    } else {
+                                        logo.setAttribute("src", "/logo.svg")
+                                    }
+                                })
                             }
                             
-                            // Whenever the user explicitly chooses light mode
-                            localStorage.theme = 'light'
+                            function darkMode() {
+                                if (html.classList.contains("dark")) {
+                                    html.classList.remove("dark");
+                                    localStorage.setItem("theme", "light");
+                                } else {
+                                    html.classList.add("dark");
+                                    localStorage.setItem("theme", "dark");
+                                }
+                                
+                                crealiveLogo.forEach(logo => {
+                                    if (logo.getAttribute("src") === "/logo.svg") {
+                                        logo.setAttribute("src", "/logo-white.svg")
+                                    } else {
+                                        logo.setAttribute("src", "/logo.svg")
+                                    }
+                                })
+                                
+                                
+                                if (themeSwitcher.previousElementSibling.classList.contains("fa-clouds-moon")) {
+                                    themeSwitcher.previousElementSibling.classList.remove("fa-clouds-moon")
+                                    themeSwitcher.previousElementSibling.classList.add("fa-sun-cloud")
+                                } else {
+                                    themeSwitcher.previousElementSibling.classList.add("fa-clouds-moon")
+                                    themeSwitcher.previousElementSibling.classList.remove("fa-sun-cloud")
+                                }
+                            } 
                             
-                            // Whenever the user explicitly chooses dark mode
-                            localStorage.theme = 'dark'
-                            
-                            // Whenever the user explicitly chooses to respect the OS preference
-                            localStorage.removeItem('theme')
+                            themeSwitcher.addEventListener("click", darkMode);
                         `
                     }
                 </Script>
-            </head>
-            <body className={Satoshi.className + " selection:bg-primary/[.2] selection:text-primary"}>{children}</body>
+            </body>
         </html>
     )
 }

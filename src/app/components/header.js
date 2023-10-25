@@ -101,7 +101,6 @@ export default function HeaderComponent() {
                         const body = document.getElementsByTagName("body")[0];
                         const menuButton = header.querySelector(".menu-bar-button")
                         const menuCloseButton = header.querySelector(".menu-bar-close-button")
-                        const themeSwitcher = header.querySelector(".theme-switcher")
                         const crealiveLogo = document.querySelectorAll(".crealive-logo img")
                         const headerHeight = header.offsetHeight;
                         const headerOffset = document.createElement("div");
@@ -123,27 +122,6 @@ export default function HeaderComponent() {
                             }
                         }
                         
-                        function darkMode() {
-                            html.classList.toggle("dark");
-                            
-                            crealiveLogo.forEach(logo => {
-                            console.log(crealiveLogo)
-                                if (logo.getAttribute("src") === "/logo.svg") {
-                                    logo.setAttribute("src", "/logo-white.svg")
-                                } else {
-                                    logo.setAttribute("src", "/logo.svg")
-                                }
-                            })
-                            
-                            
-                            if (themeSwitcher.previousElementSibling.classList.contains("fa-clouds-moon")) {
-                                themeSwitcher.previousElementSibling.classList.remove("fa-clouds-moon")
-                                themeSwitcher.previousElementSibling.classList.add("fa-sun-cloud")
-                            } else {
-                                themeSwitcher.previousElementSibling.classList.add("fa-clouds-moon")
-                                themeSwitcher.previousElementSibling.classList.remove("fa-sun-cloud")
-                            }
-                        } 
                         
                         menuButton.addEventListener("click", megaMenu);
                         menuCloseButton.addEventListener("click", megaMenu);
@@ -152,8 +130,6 @@ export default function HeaderComponent() {
                             main.classList.toggle("mega-active")
                             body.classList.toggle("overflow-hidden")
                         }
-                        
-                        themeSwitcher.addEventListener("click", darkMode);
                     `
                 }
             </Script>
