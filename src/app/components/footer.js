@@ -106,7 +106,7 @@ export default function Footer({revealReset}) {
                     </div>
                 </div>
 
-                <div className="pt-[60px] mt-[60px] md:pt-[45px] md:mt-[45px] border-t border-black-400/[.15]">
+                <div className="pt-[60px] mt-[60px] md:pt-[45px] md:mt-[45px] border-t border-black-400/[.15] dark:border-white/[.15]">
                     <div className="container mx-auto px-5">
                         <div className="grid grid-cols-3 md:flex md:flex-col md:items-center md:gap-[20px]">
                             <div className="crealive-logo">
