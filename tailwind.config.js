@@ -7,10 +7,10 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: "#88B94E",
-      secondary: "#62853E",
-      helper: "#7BA44C",
-      secondaryHelper: "#54713B",
+      primary: "#FCBB01",
+      secondary: "#E0A809",
+      helper: "#F8C941",
+      secondaryHelper: "#B59740",
       black: {
         300: "#171717",
         400: "#000000",
