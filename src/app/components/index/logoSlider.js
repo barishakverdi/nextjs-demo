@@ -10,8 +10,8 @@ export default function LogoSlider({logo}) {
     const logos = [];
     for (let i = 1; i <= logoCount; i++) {
         logos.push(
-            <SwiperSlide key={i} className="transition-all duration-300 ease-in-out lg:grayscale-0 lg:dark:grayscale grayscale hover:dark:grayscale hover:grayscale-0 hover:transition-all hover:ease-in-out hover:duration-300 [&[data-swiper-slide-index='3']]:dark:invert [&[data-swiper-slide-index='12']]:dark:invert [&[data-swiper-slide-index='14']]:dark:invert">
-                <div className="flex justify-center px-[70px] xxl:px-[60px] xl:px-[40px] lg:px-[80px] md:px-[15px] [&_img]:w-full [&_img]:h-auto [&_img]:aspect-video [&_img]:object-contain [&_img]:dark:brightness-[3]">
+            <SwiperSlide key={i} className="transition-all duration-300 ease-in-out lg:grayscale-0 lg:dark:grayscale grayscale hover:dark:grayscale hover:grayscale-0 hover:transition-all hover:ease-in-out hover:duration-300 [&_img]:dark:invert">
+                <div className="flex justify-center px-[70px] xxl:px-[60px] xl:px-[40px] lg:px-[80px] md:px-[15px] [&_img]:w-full [&_img]:h-auto [&_img]:aspect-video [&_img]:object-contain">
                     <Image src={"/clients/client-" + i + ".png"} alt={"client-" + i} width={163} height={36} loading={"lazy"}/>
                 </div>
             </SwiperSlide>)

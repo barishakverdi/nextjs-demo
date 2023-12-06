@@ -8,7 +8,7 @@ export default function Page() {
         <main className="relative group/mega">
             <HeaderComponent />
             <Hero
-                mainTitle="About Crealive"
+                mainTitle="About Waveless"
             />
             <Accordion
                 mainTitle="What we actually do?"

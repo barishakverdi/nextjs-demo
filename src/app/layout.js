@@ -23,9 +23,10 @@ const Satoshi = localFont({
 
 
 export const metadata = {
-    title: "Crealive",
-    description: "Crealive e-ticaret, B2B, SEO, sosyal ağlar ve online pazarlama gibi çeşitli alanlarda, yeni fikirlerle markaları geleceğe taşıyan bir dijital ajanstır.",
+    title: "Waveless",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, beatae distinctio dolores ducimus recusandae totam.",
 }
+
 
 
 export const ClashGrotesk = localFont({
@@ -61,7 +62,7 @@ export default function RootLayout({ children }) {
                             if (currentTheme === "dark") {
                                 html.classList.add("dark");
                                 
-                                crealiveLogo.forEach(logo => {
+                                digitalAgencyLogo.forEach(logo => {
                                     if (logo.getAttribute("src") === "/logo.svg") {
                                         logo.setAttribute("src", "/logo-white.svg")
                                     } else {
@@ -79,7 +80,7 @@ export default function RootLayout({ children }) {
                                     localStorage.setItem("theme", "dark");
                                 }
                                 
-                                crealiveLogo.forEach(logo => {
+                                digitalAgencyLogo.forEach(logo => {
                                     if (logo.getAttribute("src") === "/logo.svg") {
                                         logo.setAttribute("src", "/logo-white.svg")
                                     } else {

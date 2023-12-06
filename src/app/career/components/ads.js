@@ -50,7 +50,7 @@ export default function Ads({mainTitle}) {
                 </div>
                 
                 <div className="mr-[60px] mb-[100px] lg:mb-[50px] lg:mr-0 [&_img]:w-full [&_img]:h-auto lg:[&_img]:min-h-[250px] [&_img]:object-cover rounded-r-xl lg:rounded-none overflow-hidden">
-                    <Image src="/career-2.png" alt="Crealive Career" width={1380} height={355} />
+                    <Image src="/career-2.png" alt="Waveless Career" width={1380} height={355} />
                 </div>
 
                 <div className="container mx-auto px-5">

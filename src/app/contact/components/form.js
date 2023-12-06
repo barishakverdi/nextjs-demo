@@ -14,7 +14,7 @@ export default function ContactForm() {
             <section className="mb-[120px] lg:mb-[50px]">
                 <div className="mb-[120px] lg:mb-[50px] [&_iframe]:w-full [&_iframe]:dark:grayscale">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.0728243047315!2d29.008520976709743!3d41.067400771342236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab641a821efcf%3A0xc882f5fe3698810b!2sCrealive!5e0!3m2!1str!2str!4v1695649771864!5m2!1str!2str"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12058.433192179209!2d29.171217849691246!3d40.92433365578255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac46bfa05b1f5%3A0x60b14b9a32a817ef!2sMaltepe%20Piazza!5e0!3m2!1str!2str!4v1701880723575!5m2!1str!2str"
                         width="1440" height="450" style={{border: 0}} allowFullScreen="" loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>

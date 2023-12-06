@@ -30,27 +30,27 @@ export default function Footer({revealReset}) {
     const menuTwo = [
         {
             title: "Facebook",
-            link: "https://www.facebook.com/crealive"
+            link: "https://www.facebook.com"
         },
 
         {
             title: "Instagram",
-            link: "https://www.instagram.com/crealivenet/"
+            link: "https://www.instagram.com"
         },
 
         {
             title: "X",
-            link: "https://twitter.com/crealivenet"
+            link: "https://twitter.com"
         },
 
         {
             title: "Linkedin",
-            link: "http://www.linkedin.com/company/crealive"
+            link: "https://www.linkedin.com"
         },
 
         // {
         //     title: "Pinterest",
-        //     link: "https://tr.pinterest.com/crealive/"
+        //     link: "https://tr.pinterest.com"
         // },
     ]
     return (
@@ -75,7 +75,7 @@ export default function Footer({revealReset}) {
                             <div className="flex gap-[16px] w-full">
                                 <div className="flex flex-col gap-[20px] w-full">
                                     <span
-                                        className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400 dark:text-white">Crealive</span>
+                                        className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400 dark:text-white">Waveless</span>
                                     <ul className="flex flex-col gap-[8px]">
                                         {
                                             menuOne.map((item, index) => (
@@ -109,13 +109,13 @@ export default function Footer({revealReset}) {
                 <div className="pt-[60px] mt-[60px] md:pt-[45px] md:mt-[45px] border-t border-black-400/[.15] dark:border-white/[.15]">
                     <div className="container mx-auto px-5">
                         <div className="grid grid-cols-3 md:flex md:flex-col md:items-center md:gap-[20px]">
-                            <div className="crealive-logo">
-                                <Image src="/logo.svg" alt="Crealive" width={163} height={36}/>
+                            <div className="digital-agency-logo">
+                                <Image src="/logo.svg" alt="Waveless" width={163} height={36}/>
                             </div>
 
                             <div className="flex justify-center">
                                 <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400">
-                                    All Rights Reserved © Crealive {year.getFullYear()}
+                                    All Rights Reserved © Waveless {year.getFullYear()}
                                 </p>
                             </div>
 

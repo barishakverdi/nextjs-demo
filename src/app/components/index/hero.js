@@ -9,7 +9,7 @@ export default function Hero({img}) {
             <Lines/>
             <section className="container mx-auto px-5 flex flex-col gap-[50px] pb-[200px] xl:pb-[100px] lg:pb-[50px] lg:px-3 relative items-center">
                 <H1
-                    title={"Crealive. \n Your creative digital agency."}
+                    title={"Waveless. \n Your creative digital agency."}
                     className=" whitespace-pre-line text-[74px] leading-[78px] tracking-[-2.22px] dark:text-white text-center animate-img lg:animate-none max-[1366px]:text-[54px] max-[1366px]:leading-[58px] sm:text-[44px] sm:leading-[48px]"
                 />
 
@@ -28,7 +28,7 @@ export default function Hero({img}) {
                 </div>
 
                 <div className="px-[100px] xl:px-[75px] lg:px-[50px] sm:px-[12px] w-full rounded-xl overflow-hidden [&_img]:w-full [&_img]:rounded-xl [&_img]:min-h-[300px] max-h-[900px]:[&_img] [&_img]:object-cover [&_img]:animate-h1 lg:[&_img]:animate-none">
-                    <Image src={img ? img : "/main-banner-image.jpg"} alt="Crealive" width="1038" height="293" />
+                    <Image src={img ? img : "/main-banner-image.jpg"} alt="Waveless" width="1038" height="293" />
                 </div>
                 <i className="fa-light fa-computer-mouse-scrollwheel lg:!hidden absolute bottom-[34px] text-[32px] fa-bounce dark:text-white"></i>
 

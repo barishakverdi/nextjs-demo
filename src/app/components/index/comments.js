@@ -9,42 +9,42 @@ export default function Comments({title}) {
     const customers = [
         {
             title: "John Doe",
-            position: "CEO at Crealive",
+            position: "CEO at Waveless",
             comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam?",
             image: "customer-1.jpeg",
         },
 
         {
             title: "John Diamond",
-            position: "CEO at Crealive",
+            position: "CEO at Waveless",
            comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam?",
             image: "customer-2.jpeg",
         },
 
         {
             title: "John Doe",
-            position: "CEO at Crealive",
+            position: "CEO at Waveless",
             comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam?",
             image: "customer-1.jpeg",
         },
 
         {
             title: "John Diamond",
-            position: "CEO at Crealive",
+            position: "CEO at Waveless",
             comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam?",
             image: "customer-2.jpeg",
         },
 
         {
             title: "John Doe",
-            position: "CEO at Crealive",
+            position: "CEO at Waveless",
             comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam?",
             image: "customer-1.jpeg",
         },
 
         {
             title: "John Diamond",
-            position: "CEO at Crealive",
+            position: "CEO at Waveless",
             comment: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, deleniti doloremque odit repellat sunt ullam?",
             image: "customer-2.jpeg",
         },

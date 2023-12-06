@@ -41,7 +41,7 @@ export default function CareerForm() {
                     </div>
                 </div>
                 <div className="[&_img]:w-full [&_img]:h-auto lg:[&_img]:min-h-[200px] lg:[&_img]:object-cover">
-                    <Image src="/career-3.png" alt="Crealive Career" width={1440} height={500} />
+                    <Image src="/career-3.png" alt="Waveless Career" width={1440} height={500} />
                 </div>
             </section>
         </RevealList>

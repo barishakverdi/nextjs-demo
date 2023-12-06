@@ -8,18 +8,18 @@ export default function Page() {
         <main className="relative group/mega">
             <HeaderComponent />
             <Hero
-                mainTitle="Zen Pırlanta"
+                mainTitle="Waveless"
                 description="Our 15+ years of experience in the software world have enabled us to approach each project with a high level of expertise, delivering the best solutions to meet customer needs. The experience we have gained on each project has strengthened our mastery of technology and industry trends."
             />
             <Content
-                url="https://www.zenpirlanta.com"
-                link="zenpirlanta.com"
+                url="https://www.example.com"
+                link="example.com"
                 image="project-image.png"
                 mockup1="mockup-1.png"
                 mockup1Dark="mockup-1-dark.png"
                 mockup2="mockup-2.png"
                 mockup2Dark="mockup-2-dark.png"
-                projectOwner="Zen Pırlanta"
+                projectOwner="Honey"
                 projectDate="2023"
                 sector="Jewelery"
                 location="Istanbul / Turkey"

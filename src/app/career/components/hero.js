@@ -13,7 +13,7 @@ export default function Hero({mainTitle}) {
                 <div className="flex items-end lg:gap-[24px] lg:flex-col pl-[30px] pr-[100px] lg:px-0">
                     <div className="w-3/4 lg:w-full">
                         <div className="[&_img]:w-full [&_img]:h-auto rounded-xl overflow-hidden lg:rounded-none lg:[&_img]:min-h-[200px] lg:[&_img]:object-cover">
-                            <Image src="/career-1.png" alt="Crealive Career" width={1110} height={354}/>
+                            <Image src="/career-1.png" alt="Waveless Career" width={1110} height={354}/>
                         </div>
                     </div>
                     <div className="w-1/4 lg:w-full flex justify-end lg:justify-start lg:px-5">

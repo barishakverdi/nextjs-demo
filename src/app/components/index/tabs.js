@@ -9,7 +9,7 @@ export default function Tabs({ mainTitle }) {
     const tabs = ["About Us", "What we Do?", "Projects"]
     const contents = [
         {
-            title: "Crealive",
+            title: "Waveless",
             description: "We are a leading software agency with over 15 years of experience in the software industry. Having completed more than 400 projects, we have provided value to numerous clients. Our customers are our top priority. We work diligently on every project to create tailored solutions that meet our clients' unique needs.",
         },
 
