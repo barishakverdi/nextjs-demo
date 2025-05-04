@@ -55,13 +55,13 @@ export default function Footer({revealReset}) {
     ]
     return (
         <RevealList interval={100} delay={300} reset={revealReset} mobile={false}>
-            <footer className="mb-[60px] md:mb-[45px]">
+            <footer className="mb-[60px] max-md:mb-[45px]">
                 <div className="container mx-auto px-5">
-                    <div className="flex gap-[24px] lg:flex-col lg:gap-[34px]">
-                        <div className="w-1/2 lg:w-full">
-                            <div className="flex flex-col gap-[24px] lg:gap-[16px]">
+                    <div className="flex gap-[24px] max-lg:flex-col max-lg:gap-[34px]">
+                        <div className="w-1/2 max-lg:w-full">
+                            <div className="flex flex-col gap-[24px] max-lg:gap-[16px]">
                                 <span className="text-[18px] leading-[18px] tracking-[-0.54px] text-black-400 dark:text-white">Job Opportunities</span>
-                                <p className="text-[48px] leading-[54px] lg:text-[36px] lg:leading-[44px] sm:text-[30px] sm:leading-[38px] tracking-[-1.44px] text-black-400 dark:text-white">Want to
+                                <p className="text-[48px] leading-[54px] max-lg:text-[36px] max-lg:leading-[44px] max-sm:text-[30px] max-sm:leading-[38px] tracking-[-1.44px] text-black-400 dark:text-white">Want to
                                     improve yourself <br/> with us?</p>
                                 <Button
                                     link="/career"
@@ -71,7 +71,7 @@ export default function Footer({revealReset}) {
                             </div>
                         </div>
 
-                        <div className="w-1/2 lg:w-full">
+                        <div className="w-1/2 max-lg:w-full">
                             <div className="flex gap-[16px] w-full">
                                 <div className="flex flex-col gap-[20px] w-full">
                                     <span
@@ -106,9 +106,9 @@ export default function Footer({revealReset}) {
                     </div>
                 </div>
 
-                <div className="pt-[60px] mt-[60px] md:pt-[45px] md:mt-[45px] border-t border-black-400/[.15] dark:border-white/[.15]">
+                <div className="pt-[60px] mt-[60px] max-md:pt-[45px] max-md:mt-[45px] border-t border-black-400/[.15] dark:border-white/[.15]">
                     <div className="container mx-auto px-5">
-                        <div className="grid grid-cols-3 md:flex md:flex-col md:items-center md:gap-[20px]">
+                        <div className="grid grid-cols-3 max-md:flex max-md:flex-col max-md:items-center max-md:gap-[20px]">
                             <div className="digital-agency-logo">
                                 <Image src="/logo.svg" alt="Waveless" width={163} height={36}/>
                             </div>

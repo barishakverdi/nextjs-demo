@@ -1,7 +1,7 @@
 'use client'
 import Script from "next/script"
 import { Tab, Transition } from '@headlessui/react'
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import { RevealList } from  'next-reveal'
 
 
@@ -25,37 +25,45 @@ export default function Tabs({ mainTitle }) {
     ]
     return (
         <RevealList interval={100} delay={300} reset={true}>
-            <section className="mb-[160px] xl:mb-[80px] lg:mb-[50px]">
+            <section className="mb-[160px] max-xl:mb-[80px] max-lg:mb-[50px]">
                 <div className="container mx-auto px-5">
-                    <h2 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 dark:text-white mb-[50px] lg:mb-[24px] lg:text-[50px] lg:leading-[64px] sm:text-[34px] sm:leading-[44px]">{mainTitle}</h2>
-                    <div className="flex items-end gap-[24px] lg:flex-col lg:gap-[40px]">
+                    <h2 className="text-[60px] leading-[74px] tracking-[-1.8px] text-black-400 dark:text-white mb-[50px] max-lg:mb-[24px] max-lg:text-[50px] max-lg:leading-[64px] max-sm:text-[34px] max-sm:leading-[44px]">{mainTitle}</h2>
+                    <div className="*:flex *items-end *gap-[24px] *:max-lg:flex-col *:max-lg:gap-[40px]">
                         <Tab.Group>
-                            <div className="w-1/2 lg:w-full">
+                            <div className="w-1/2 max-lg:w-full">
                                 <div>
-                                    <Tab.List className="flex flex-col gap-[40px] border-l border-solid border-black-400/[.15] dark:border-white/[.15] pl-[60px] lg:pl-[30px] md:pl-[24px] lg:gap-[30px]">
+                                    <Tab.List className="flex flex-col gap-[40px] border-l border-solid border-black-400/[.15] dark:border-white/[.15] pl-[60px] max-lg:pl-[30px] max-md:pl-[24px] max-lg:gap-[30px]">
                                         {tabs.map((tabItem, a) => (
-                                            <Tab key={tabItem} className={"ui-selected:opacity-100 ui-selected:pl-[42px] ui-selected:before:w-[30px] ui-selected::hover:opacity-100 text-left outline-0 cursor-pointer text-[40px] leading-[48px] sm:text-[30px] sm:leading-[38px] tracking-[-1.8px] text-black-300 dark:text-light-400 opacity-70 relative before:transition-all before:duration-700 before:ease-in-out before:content-[''] before:absolute before:left-0 before:top-[24px] before:w-0 before:h-[2px] before:bg-black-400 before:dark:bg-white before:rounded-full transition-all duration-700 ease-in-out hover:opacity-80 focus:outline-0 ui-selected:outline-0 ui-selected:[outline:none]"}>{tabItem}</Tab>
+                                            <Tab key={tabItem} className={"ui-selected:opacity-100 ui-selected:pl-[42px] ui-selected:before:w-[30px] ui-selected::hover:opacity-100 text-left outline-0 cursor-pointer text-[40px] leading-[48px] max-sm:text-[30px] max-sm:leading-[38px] tracking-[-1.8px] text-black-300 dark:text-light-400 opacity-70 relative before:transition-all before:duration-700 before:ease-in-out before:content-[''] before:absolute before:left-0 before:top-[24px] before:w-0 before:h-[2px] before:bg-black-400 before:dark:bg-white before:rounded-full transition-all duration-700 ease-in-out hover:opacity-80 focus:outline-0 ui-selected:outline-0 ui-selected:[outline:none]"}>{tabItem}</Tab>
                                         ))}
                                     </Tab.List>
                                 </div>
                             </div>
 
-                            <div className="w-1/2 relative lg:w-full">
+                            <div className="w-1/2 relative max-lg:w-full">
                                 <div className="tabs-content">
                                     <Tab.Panels>
                                         {contents.map((contentItem, a) => (
                                             <Tab.Panel key={a.toString()}>
                                                 <Transition
-                                                    appear show={true}
+                                                    appear
+                                                    show={true}
                                                     enter="transition-opacity duration-700"
                                                     enterFrom="opacity-0"
-                                                    enterTo="opacity-100 flex flex-col gap-[24px]"
+                                                    enterTo="opacity-100"
                                                     leave="transition-opacity duration-700"
                                                     leaveFrom="opacity-100"
                                                     leaveTo="opacity-0"
+                                                    as={Fragment} // ⚠️ className verilmiyor
                                                 >
-                                                    {contentItem.title ? <h3 className="text-[36px] leading-[42px] sm:text-[28px] sm:leading-[36px] tracking-[-1.08px] text-black-400 dark:text-white">{contentItem.title}</h3> : ""}
-                                                    {contentItem.description ? <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-300">{contentItem.description}</p> : ""}
+                                                    <div className="flex flex-col gap-[24px]"> {/* className buraya taşındı */}
+                                                        {contentItem.title && (
+                                                            <h3 className="text-[36px] leading-[42px] max-sm:text-[28px] max-sm:leading-[36px] tracking-[-1.08px] text-black-400 dark:text-white">{contentItem.title}</h3>
+                                                        )}
+                                                        {contentItem.description && (
+                                                            <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-300">{contentItem.description}</p>
+                                                        )}
+                                                    </div>
                                                 </Transition>
                                             </Tab.Panel>
                                         ))}
@@ -70,4 +78,7 @@ export default function Tabs({ mainTitle }) {
 
     )
 }
+
+// {contentItem.title ? <h3 className="text-[36px] leading-[42px] max-sm:text-[28px] max-sm:leading-[36px] tracking-[-1.08px] text-black-400 dark:text-white">{contentItem.title}</h3> : ""}
+// {contentItem.description ? <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-300">{contentItem.description}</p> : ""}
 

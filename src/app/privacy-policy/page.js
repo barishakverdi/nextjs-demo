@@ -5,7 +5,7 @@ export default function Page() {
     return (
         <main className="relative group/mega">
             <HeaderComponent/>
-            <div className="py-[100px] lg:py-[50px] md:py-[30x] static-page">
+            <div className="py-[100px] max-lg:py-[50px] max-md:py-[30x] static-page">
                 <div className="container mx-auto px-5">
                     <div className="flex flex-col gap-[24px]">
                         <p>This text is just example. Source: <a
