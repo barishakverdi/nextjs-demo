@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeaderComponent() {
     useEffect(() => {
@@ -106,10 +107,10 @@ export default function HeaderComponent() {
             <div className="h-full bg-backgroundColor dark:bg-darkBackgroundColor group-[&.fixed]/header:bg-white group-[&.fixed]/header:dark:bg-darkBackgroundColor">
                 <div className="container body py-[32px] flex items-center justify-between h-full">
                     <div className="left-side max-lg:[&_img]:w-[150px] max-lg:[&_img]:h-auto">
-                        <a href="/" className="digital-agency-logo">
+                        <Link href="/" className="digital-agency-logo">
                             <Image src="/logo.svg" alt="digital-agency Logo" width={163} height={36} className="dark:hidden"/>
                             <Image src="/logo-white.svg" alt="digital-agency Logo" width={163} height={36} className="hidden dark:block"/>
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="right-side flex items-center gap-[20px]">
@@ -156,7 +157,7 @@ export default function HeaderComponent() {
                                 {
                                     menu.map((item, index) => (
                                         <li key={index}>
-                                            <a href={item.link} className="text-[48px] leading-[54px] tracking-[-1.44px] max-xl:text-[34px] max-xl:leading-[44px] text-black-400 dark:text-white duration-300 ease-in-out hover:!text-primary relative after:content-[''] after:duration-700 after:ease-in-out after:bottom-0 after:left-0 after:absolute after:bg-primary after:w-0 after:h-[1px] hover:after:w-full">{item.title}</a>
+                                            <Link href={item.link} className="text-[48px] leading-[54px] tracking-[-1.44px] max-xl:text-[34px] max-xl:leading-[44px] text-black-400 dark:text-white duration-300 ease-in-out hover:!text-primary relative after:content-[''] after:duration-700 after:ease-in-out after:bottom-0 after:left-0 after:absolute after:bg-primary after:w-0 after:h-[1px] hover:after:w-full">{item.title}</Link>
                                         </li>
                                     ))
                                 }
@@ -167,8 +168,8 @@ export default function HeaderComponent() {
                     <div className="flex border-t border-black-400/[.15] dark:border-white/[.15] relative z-20 max-md:bg-white max-md:dark:bg-darkBackgroundColor">
                         <div className="container mx-auto px-5 py-[30px]">
                             <div className="flex items-center gap-[24px] [&_a]:text-[18px] [&_a]:leading-[38px] [&_a]:tracking-[-0.54px] [&_a]:text-black-400 [&_a]:dark:text-white [&_a]:duration-300 [&_a]:ease-in-out [&_a]:hover:[&_a]:text-primary">
-                                <a href="tel:+2575637401" className="hover:text-primary relative after:w-[1px] after:h-[20px] after:bg-black-300/[.1] dark:after:bg-white/[.1] after:absolute after:-right-[13px] after:top-[8px]">(257) 563-7401</a>
-                                <a href="mailto:info@digital-agency.net" className="hover:text-primary">info@digital-agency.net</a>
+                                <Link href="tel:+2575637401" className="hover:text-primary relative after:w-[1px] after:h-[20px] after:bg-black-300/[.1] dark:after:bg-white/[.1] after:absolute after:-right-[13px] after:top-[8px]">(257) 563-7401</Link>
+                                <Link href="mailto:info@digital-agency.net" className="hover:text-primary">info@digital-agency.net</Link>
                             </div>
                         </div>
                     </div>

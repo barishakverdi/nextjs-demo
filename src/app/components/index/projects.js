@@ -5,6 +5,7 @@ import { RevealList } from  'next-reveal'
 import 'swiper/css';
 import {Autoplay, Navigation} from "swiper/modules";
 import {projects} from "@/app/projects/components/customerList";
+import Link from "next/link";
 
 export default function Projects({title}) {
     return (
@@ -30,15 +31,15 @@ export default function Projects({title}) {
                             <SwiperSlide key={index}>
                                 <div className="flex flex-col rounded-main overflow-hidden group">
                                     <div className="">
-                                        <a href={project.url} className="flex w-full max-h-[450px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover relative overflow-hidden after:pointer-events-none after:w-full after:h-full after:absolute after:z-20 after:top-0 after:left-0 after:opacity-0 after:bg-gradient-to-b after:from-white/[0] after:to-white/[.4] after:transition-all after:duration-300 after:ease-in-out group-hover:after:opacity-100 ">
+                                        <Link href={project.url} className="flex w-full max-h-[450px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover relative overflow-hidden after:pointer-events-none after:w-full after:h-full after:absolute after:z-20 after:top-0 after:left-0 after:opacity-0 after:bg-gradient-to-b after:from-white/[0] after:to-white/[.4] after:transition-all after:duration-300 after:ease-in-out group-hover:after:opacity-100 ">
                                             <Image src={project.image} alt={project.title} width={600} height={405} />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="p-[16px_22px]">
-                                        <a href={project.url} className="flex items-center justify-between gap-[12px]">
+                                        <Link href={project.url} className="flex items-center justify-between gap-[12px]">
                                             <h4 className="text-[36px] leading-[42px] tracking-[-1.08px] text-black-300 dark:text-light-200 max-md:text-[26px] max-md:leading-[32px] after:w-0 after:h-[1px] after:bg-black-300 after:dark:bg-light-200 flex flex-col group-hover:after:w-full after:transition-all after:duration-300 after:ease-in-out">{project.title}</h4>
                                             <i className="fa-light fa-arrow-right text-[32px] text-black-300 dark:text-light-300"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </SwiperSlide>

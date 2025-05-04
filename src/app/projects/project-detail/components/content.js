@@ -1,6 +1,7 @@
 'use client'
 import { RevealList } from  'next-reveal'
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Content({url, link, image, mockup1, mockup1Dark, mockup2, mockup2Dark, projectOwner, projectDate, sector, location}) {
     return (
@@ -10,15 +11,15 @@ export default function Content({url, link, image, mockup1, mockup1Dark, mockup2
                     <div className="mb-[64px] max-lg:mb-[50px]">
                         <div className="flex flex-col rounded-main overflow-hidden group">
                             <div className="">
-                                <a href={url} target="_blank" className="flex w-full max-h-[400px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover relative overflow-hidden after:pointer-events-none after:w-full after:h-full after:absolute after:z-20 after:top-0 after:left-0 after:opacity-0 after:bg-gradient-to-b after:from-white/[0] after:to-white/[.4] after:transition-all after:duration-300 after:ease-in-out group-hover:after:opacity-100 shadow-[0px_2px_8px_3px_rgba(23,_23,_23,_0.05)]">
+                                <Link href={url} target="_blank" className="flex w-full max-h-[400px] [&_img]:w-full [&_img]:h-full [&_img]:object-cover relative overflow-hidden after:pointer-events-none after:w-full after:h-full after:absolute after:z-20 after:top-0 after:left-0 after:opacity-0 after:bg-gradient-to-b after:from-white/[0] after:to-white/[.4] after:transition-all after:duration-300 after:ease-in-out group-hover:after:opacity-100 shadow-[0px_2px_8px_3px_rgba(23,_23,_23,_0.05)]">
                                     <Image src={"/"+image} alt={projectOwner} width={1000} height={400} />
-                                </a>
+                                </Link>
                             </div>
                             <div className="p-[16px_22px]">
-                                <a href={url} className="flex items-center justify-between gap-[12px]">
+                                <Link href={url} className="flex items-center justify-between gap-[12px]">
                                     <h2 className="text-[36px] leading-[42px] tracking-[-1.08px] text-black-300 dark:text-light-200 max-md:text-[26px] max-md:leading-[32px] after:w-0 after:h-[1px] after:bg-black-300 flex flex-col group-hover:after:w-full after:transition-all after:duration-300 after:ease-in-out">{link}</h2>
                                     <i className="fa-light fa-arrow-right text-[32px] text-black-300 dark:text-light-200"></i>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

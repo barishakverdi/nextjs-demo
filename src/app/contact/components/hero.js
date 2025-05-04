@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image"
 import { RevealList } from  'next-reveal'
+import Link from "next/link";
 
 export default function Hero({mainTitle}) {
     return (
@@ -13,8 +14,8 @@ export default function Hero({mainTitle}) {
                     <div className="container mx-auto px-5 absolute max-lg:static">
                         <div className="w-1/3 max-lg:w-full">
                             <div className="flex flex-col gap-[12px]">
-                                <a href="tel:2575637401" className="w-max text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 dark:text-white duration-300 ease-in-out hover:text-secondary hover:dark:text-primary">(257) 563-7401</a>
-                                <a href="mailto:info@digital-agency.net" className="w-max text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 dark:text-white duration-300 ease-in-out hover:text-secondary hover:dark:text-primary">info@digital-agency.net</a>
+                                <Link href="tel:2575637401" className="w-max text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 dark:text-white duration-300 ease-in-out hover:text-secondary hover:dark:text-primary">(257) 563-7401</Link>
+                                <Link href="mailto:info@digital-agency.net" className="w-max text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 dark:text-white duration-300 ease-in-out hover:text-secondary hover:dark:text-primary">info@digital-agency.net</Link>
                                 <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-black-400 dark:text-white duration-300 ease-in-out hover:text-secondary hover:dark:text-primary">Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522</p>
                             </div>
                         </div>

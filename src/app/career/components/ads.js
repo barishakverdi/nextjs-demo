@@ -1,6 +1,7 @@
 'use client'
 import { RevealList } from  'next-reveal'
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Ads({mainTitle}) {
     const ads = [
@@ -57,7 +58,7 @@ export default function Ads({mainTitle}) {
                     <div className="grid grid-cols-2 gap-[24px] max-sm:grid-cols-1">
                         {
                             ads.map((ad, index) => (
-                                <a href={ad.url} key={index} className="flex flex-col gap-[24px] p-[30px] max-md:p-[15px] rounded-xl border border-black-300/[.08] dark:border-white/[.08] bg-white dark:bg-black-300/[.1] shadow-[0px_1px_0px_0px_rgba(23,_23,_23,_0.08)] dark:shadow-[0px_1px_0px_0px_rgba(255,_255,_255,_0.08)] transition-all duration-300 ease-in-out hover:bg-light-200 hover:border-helper hover:dark:border-helper hover:dark:bg-black-400">
+                                <Link href={ad.url} key={index} className="flex flex-col gap-[24px] p-[30px] max-md:p-[15px] rounded-xl border border-black-300/[.08] dark:border-white/[.08] bg-white dark:bg-black-300/[.1] shadow-[0px_1px_0px_0px_rgba(23,_23,_23,_0.08)] dark:shadow-[0px_1px_0px_0px_rgba(255,_255,_255,_0.08)] transition-all duration-300 ease-in-out hover:bg-light-200 hover:border-helper hover:dark:border-helper hover:dark:bg-black-400">
                                     <div className="flex items-center gap-[12px]">
                                         <div className="w-[44px] h-[44px] rounded-full overflow-hidden flex items-center justify-center" style={{backgroundColor: ad.color}}>
                                             <i className={"fa-light fa-" + ad.icon + " text-[20px] text-white"}></i>
@@ -68,7 +69,7 @@ export default function Ads({mainTitle}) {
                                         <p className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 line-clamp-1">{ad.description}</p>
                                         <span className="text-[12px] leading-[14px] tracking-[-0.36px] text-black-300 dark:text-light-300">{ad.date}</span>
                                     </div>
-                                </a>
+                                </Link>
                             ))
                         }
                     </div>

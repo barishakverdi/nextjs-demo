@@ -1,5 +1,6 @@
 import HeaderComponent from "@/app/components/header";
 import Footer from "@/app/components/footer";
+import Link from "next/link";
 
 export default function Page() {
     return (
@@ -8,8 +9,7 @@ export default function Page() {
             <div className="py-[100px] max-lg:py-[50px] max-md:py-[30x] static-page">
                 <div className="container mx-auto px-5">
                     <div className="flex flex-col gap-[24px]">
-                        <p>This text is just example. Source: <a
-                            href="https://www.privacypolicytemplate.net/">https://www.privacypolicytemplate.net/</a></p>
+                        <p>This text is just example. Source:<Link href="https://www.privacypolicytemplate.net/">https://www.privacypolicytemplate.net/</Link></p>
                         <h1>Privacy Policy of Company Name</h1>
                         <p>
                             Company Name operates the Website Name website, which provides the SERVICE.

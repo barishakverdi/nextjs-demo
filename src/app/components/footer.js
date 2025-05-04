@@ -2,6 +2,7 @@
 import {RevealList} from 'next-reveal'
 import Button from "@/app/components/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer({revealReset}) {
     const year = new Date();
@@ -80,8 +81,7 @@ export default function Footer({revealReset}) {
                                         {
                                             menuOne.map((item, index) => (
                                                 <li key={index}>
-                                                    <a href={item.link}
-                                                       className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 duration-300 ease-in-out hover:text-black-300 relative after:duration-300 after:ease-in-out after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black-300 after:dark:bg-light-400 hover:after:w-full">{item.title}</a>
+                                                    <Link href={item.link} className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 duration-300 ease-in-out hover:text-black-300 relative after:duration-300 after:ease-in-out after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black-300 after:dark:bg-light-400 hover:after:w-full">{item.title}</Link>
                                                 </li>
                                             ))
                                         }
@@ -94,8 +94,7 @@ export default function Footer({revealReset}) {
                                         {
                                             menuTwo.map((item, index) => (
                                                 <li key={index}>
-                                                    <a href={item.link} target="_blank"
-                                                       className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300 relative after:duration-300 after:ease-in-out after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black-300 after:dark:bg-light-400 hover:after:w-full">{item.title}</a>
+                                                    <Link href={item.link} target="_blank" className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300 relative after:duration-300 after:ease-in-out after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-black-300 after:dark:bg-light-400 hover:after:w-full">{item.title}</Link>
                                                 </li>
                                             ))
                                         }
@@ -122,14 +121,12 @@ export default function Footer({revealReset}) {
                             <div className="flex justify-end">
                                 <ul className="flex items-center gap-[25px]">
                                     <li className="relative after:w-[1px] after:h-[20px] after:bg-black-300/[.1] after:absolute after:-right-[13px] after:top-[8px]">
-                                        <a href="/gdpr"
-                                           className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300">GDPR</a>
+                                        <Link href="/gdpr" className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300">GDPR</Link>
                                     </li>
 
                                     <li>
-                                        <a href="/privacy-policy"
-                                           className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300">Privacy
-                                            Policy</a>
+                                        <Link href="/privacy-policy" className="text-[18px] leading-[38px] tracking-[-0.54px] text-gray-400 dark:text-light-400 transition-all duration-300 ease-in-out hover:text-black-300">Privacy
+                                            Policy</Link>
                                     </li>
                                 </ul>
                             </div>
